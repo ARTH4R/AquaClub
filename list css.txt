@@ -1,0 +1,31 @@
+font
+
+font-family: 'Signika', sans-serif; ()Eng font
+link : https://fonts.google.com/specimen/Signika?preview.text=AquaClub&preview.text_type=custom
+imported 400, 600
+using in nav_logo
+
+font-family: 'Manrope', sans-serif; (Eng font)
+https://fonts.google.com/specimen/Manrope?preview.text=Home&preview.text_type=custom&query=manrope
+imported 400, 700
+using in nav_botton nav_botton_dropdown
+
+font-family: 'Mitr', sans-serif; (Thai font)
+https://fonts.google.com/specimen/Mitr?preview.text=%E0%B8%AA%E0%B8%B1%E0%B8%95%E0%B8%A7%E0%B9%8C%E0%B8%99%E0%B9%89%E0%B8%B3&preview.text_type=custom&query=mitr
+imported 300, 400
+using in hover_dropdown
+
+font-family: 'DM Sans', sans-serif;
+https://fonts.google.com/specimen/DM+Sans?preview.text=AquaClub&preview.text_type=custom&query=dm+san
+imported 1000
+using in new logo nav replace old
+
+font-family: 'K2D', sans-serif;
+https://fonts.google.com/specimen/K2D?preview.text=%E0%B8%84%E0%B8%A7%E0%B8%A2&preview.text_type=custom&query=k2d
+imported 200, 400, 700
+using in benner_under_nav_text
+
+font-family: 'Prompt', sans-serif;
+https://fonts.google.com/specimen/Prompt?preview.text=AquaClub%20%E0%B9%82%E0%B8%A5%E0%B8%A1%E0%B8%B2%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%82%E0%B8%A7%E0%B8%94&preview.text_type=custom&sort=popularity&subset=thai&noto.script=Thai
+imported 100, 200, 300, 400, 500, 600, 700, 800, 900
+using in thai lang , benner paragrahp and normaly font uesd thai
