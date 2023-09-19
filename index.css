@@ -148,6 +148,8 @@ a {
 }
 .dropdown-mobile {
     display: none;
+    width: 1vw;
+    height: 1vh;
 }
 .mobile-dropdown-menu-container {
     min-width: 160px;
@@ -344,8 +346,15 @@ a {
     .nb_contact {
         display: none;
     }
+    .nav_logo {
+        font-size: 4rem;
+    }
     .nav_botton {
         display: none;
+    }
+    .dropdown-mobile {
+        width: 12vw;
+        height: 12vh;
     }
     .footer__top__right {
         display: flex;
@@ -355,12 +364,12 @@ a {
         margin-right: 7vw;
     }
     .benner_under_nav_header {
-        margin-top: 3vh;
-        font-size: 2rem;
+        margin-top: 1vh;
+        font-size: 1rem;
 
     }
     .benner_under_nav_papragrahp {
-        margin-top: 10  vh;
+        margin-top: 10vh;
         font-size: 4.5rem;
       
     }
