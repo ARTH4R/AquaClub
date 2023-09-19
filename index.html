@@ -26,24 +26,30 @@
         <!-- dropdown in nav section -->
             <div class="nav_botton nb_page">Page
               <div class="nav_dropdown_container">
-                <a href="./aquatic_animals.html" target="_blank" class="nav_dropdown_content">สัตว์น้ำ</a>
-                <a href="#" target="_blank" class=" nav_dropdown_content">สัตว์น้ำคุ้มครอง</a>
+                <a href="./aquatic_animals.html" target="_self" class="nav_dropdown_content">สัตว์น้ำ</a>
+                <a href="#" target="_self" class=" nav_dropdown_content">สัตว์น้ำคุ้มครอง</a>
               </div>
             </div>
              <a href="./about_us.html" class="nav_botton nb_about_us">About us</a>
-             <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class=" nb_contact">Contact</a>
+             <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class=" nb_contact">Contact</a>
+             <img onclick="dropdown()"  src="./assets/image/icon/mobile/dropdown-icon-mobile.svg" alt="icon" class="dropdown-mobile">
         </div>
+    </div>
+    <!-- mobile dropdown invisible on normal -->
+    <div id="dropdown" class="mobile-dropdown-menu-container">
+        <a onclick="topFunction()" id="got-button" class="mobile-dropdown-menu-element">Home</a>
+        <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="mobile-dropdown-menu-element">Contact</a>
+        <a href="./about_us.html" class="mobile-dropdown-menu-element">About us</a>
+        <script src="./js/home/mobile-dropdown.js"></script>
     </div>
     
     <!-- Banner under nav bar section -->
         <div class="benner_under_nav_container">
             <div class="benner_pic_slide_show">
-                    <div class="benner_under_nav_text_container">
                         <div class="benner_under_nav_header bun_text">ยินดีต้อนรับสู่</div>
                         <div class="benner_under_nav_papragrahp bun_text">AquaClub</div>
                         <div class="benner_under_nav_website_edu_fish bun_text">เว็บไซต์การเรียนรู้เกี่ยวกับสัตว์ทะเล</div>
                         <div id="scroll_down_button" onclick="downFunction()" class="benner_under_nav_button scroll_down_button bun_text">เริ่มต้น</div>
-                    </div>
                 <img src="./assets/image/home-benner-pic/benner_1_nav_desktop.jpg" alt="benner" class="benner_under_nav_pic">
                 <img src="./assets/image/home-benner-pic/benner_2_nav_desktop.jpg" alt="benner" class="benner_under_nav_pic">
                 <img src="./assets/image/home-benner-pic/benner_3_nav_desktop.jpg" alt="benner" class="benner_under_nav_pic">
@@ -61,7 +67,7 @@
                 <div class="tile-text-content tile-text-header">สัตว์น้ำ</div>
                 <div class="tile-text-content tile-text-description">สัตว์น้ำคือสิ่งมีชีวิตในน้ำ เช่น ปลา, กุ้ง, โลมา มีบทบาทสำคัญในนิเวศน์้ำและมนุษย์ใช้ประโยชน์จากน้ำและสัตว์น้ำในการดำเนินชีวิตและเศรษฐกิจของเรา</div>
                     <div class="tile-text-content tile-text-button">
-                        <a class="tile_button" href="./aquatic_animals.html">เรียนรู้เพิ่มเติม</a>
+                        <a target="_self" class="tile_button" href="./aquatic_animals.html">เรียนรู้เพิ่มเติม</a>
                     </div>
             </div>
         </div>
@@ -80,7 +86,7 @@
         <div class="tile-right-content">    
             <div class="tile-description-container">
                 <div class="tile-text-content tile-text-header">สัตว์ทะเลที่ใกล้ศูนย์พันธุ์</div>
-                <div class="tile-text-content tile-text-description">สัตว์ทะเลที่มีจำนวนประชากรลดลงอย่างมากและเริ่มมีความเสี่ยงที่จะสูญพันธุ์ มักเป็นผลมาจากการกระทำของมนุษย์และสภาพแวดล้อมที่เปลี่ยนแปลง สาเหตุอาจเป็นการล่าล้างเขตที่เป็นที่อยู่อาศัยของพวกมัน มลพิษน้ำที่มาจากกิจกรรมของมนุษย์ เปลี่ยนแปลงสภาพอากาศ และปัจจัยอื่นที่มีผลกระทบต่อสิ่งแวดล้อมทะเลและทรัพยากรทางทะเล สัตว์เหล่านี้อาจถูกจดทะเบียนในรายชื่อสัตว์ที่ใกล้สูญพันธุ์ของสหประชาชาติ (IUCN) และมักจัดเป็นหมวด "ใกล้สูญพันธุ์" หรือ "วิกฤต" ขึ้นอยู่กับสถานะประชากรของแต่ละชนิดในขณะนั้นและปัจจัยอื่นที่ทำให้ประชากรลดลงอย่างรวดเร็ว</div>
+                <div class="tile-text-content tile-text-description">สัตว์ทะเลลดลงจำนวนมากและเสี่ยงสูญพันธุ์ เกิดจากกิจกรรมมนุษย์และการเปลี่ยนแปลงสภาพแวดล้อมทะเล เช่น การล่าล้างอาศัย, มลพิษน้ำ, การเปลี่ยนแปลงสภาพอากาศ และปัจจัยอื่น ทำให้จดทะเบียนในรายชื่อสัตว์ใกล้สูญพันธุ์ของ IUCN ในหมวด "ใกล้สูญพันธุ์" หรือ "วิกฤต"</div>
                     <div class="tile-text-content tile-text-button">
                         <a class="tile_button" href="#">เรียนรู้เพิ่มเติม</a>
                     </div>

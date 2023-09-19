@@ -127,6 +127,9 @@ a {
     color: #fff;
     background-color: #144272;
 }
+.nb_about_us {
+    width: auto;
+}
 .nav_botton::after {
     content: '';
     position: absolute;
@@ -143,8 +146,35 @@ a {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+.dropdown-mobile {
+    display: none;
+}
+.mobile-dropdown-menu-container {
+    min-width: 160px;
+    display: none;
+}
+.mobile-dropdown-menu-element {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px;
+    font-family: 'manrope', sans-serif; 
+    font-weight: 300;
+    font-size: 2rem;
+}
+.mobile-dropdown-menu-element:hover {
+    background-color: #144272;
+    color: #FFF;
+}
+
 
 /* benner under nav section */
+.benner_pic_slide_show {
+    position: relative;
+}
 .benner_under_nav_pic {
     width: 100%;
     height: auto;
@@ -152,31 +182,38 @@ a {
 }
 
 .benner_under_nav_text_container {
-    margin-top: 13vh;
-    position: absolute;
+    margin-right: 10vh;
+    margin-top: 20vh;
     z-index: 98;
     width: 100%;
     height: 80vh;
+    position: absolute;
 }
 .bun_text {
-    text-align: right;
+    margin-right: 10vh;
     font-family: 'Prompt', sans-serif;
     color: white;   
     font-weight: 300;
-    padding-right: 6vw;
+    right: 1vw;
+    position: absolute;
 }
 .benner_under_nav_header {
+    margin-top: 8vh;
     font-size: 3rem;
+    position: absolute;
 }
 .benner_under_nav_papragrahp {
+    margin-top: 13vh;
     font-size: 5.5rem;
+    position: absolute;
 }
-.benner_under_nav_website_edu_fish {   
+.benner_under_nav_website_edu_fish {
+    margin-top: 29vh;
     font-size: 2rem;
+    position: absolute;
 }
 .scroll_down_button {
-    margin-top: 3vh;
-    margin-left: 82vw;
+    margin-top: 37vh;
     width: 5vw;
     font-size: 3rem;
     cursor: pointer;
@@ -190,6 +227,7 @@ a {
     border-radius: 40px;
     padding: 10px 50px;
     border: white solid 0.1rem;
+    position: absolute;
 }
 .scroll_down_button:hover {
     background-color: white;
@@ -208,9 +246,7 @@ a {
 }
 .tile-img-content {
     width: 100%;
-}
-.tile-content-container-row2 {
-    margin-top: -0.5vh;
+    height: 100%;
 }
 .tile-text-content {
     font-family: 'Prompt', sans-serif;
@@ -245,9 +281,6 @@ a {
     color: white;
 }
 
-
-
-
 /* footer section */
 .footer {
     padding: 2rem 10rem;
@@ -267,7 +300,7 @@ a {
 .footer__top__right {
     display: flex;
     flex-direction: row;
-    width: 30%;
+    width: 40%;
     justify-content: space-between;
 }
 
@@ -299,4 +332,118 @@ a {
     padding-top: 1.5rem;
     border-top: 0.05rem solid #fcfcfc;
     color: #fcfcfc;
+}
+@media only screen and (max-width: 835px){
+    .dropdown-mobile {
+        width: 15vw;
+        height: 15vw;
+        display: block; 
+        filter: invert(95%) sepia(97%) saturate(11%) hue-rotate(245deg) brightness(103%) contrast(103%);
+        margin-left: 30vw;
+    }
+    .nb_contact {
+        display: none;
+    }
+    .nav_botton {
+        display: none;
+    }
+    .footer__top__right {
+        display: flex;
+        flex-direction: row ;
+    }
+    .bun_text {
+        margin-right: 7vw;
+    }
+    .benner_under_nav_header {
+        margin-top: 3vh;
+        font-size: 2rem;
+
+    }
+    .benner_under_nav_papragrahp {
+        margin-top: 10  vh;
+        font-size: 4.5rem;
+      
+    }
+    .benner_under_nav_website_edu_fish {
+        margin-top: 20vh;
+        font-size: 2rem;
+     
+    }
+    .scroll_down_button {
+        margin-top: 27vh;
+        width: 10vw;
+    }
+    .tile-text-button {
+        width: 20vw;
+    }
+    .tile-description-container {
+        padding: 1%;
+    }
+    .tile-img-content {
+        height: 100%;
+    }
+}
+    
+@media only screen and (max-width: 1315px){
+    .benner_under_nav_header {
+        margin-top: 5vh;
+
+    }
+    .benner_under_nav_papragrahp {
+        margin-top: 10vh;
+      
+    }
+    .benner_under_nav_website_edu_fish {
+        margin-top: 27vh;
+     
+    }
+    .scroll_down_button {
+        margin-top: 36vh;
+        width: 10vw;
+    }
+    .tile-text-button {
+        width: 10vw;
+    }
+    .tile-description-container {
+        padding: 1%;
+    }
+}
+@media only screen and (max-width: 940px){
+    .bun_text {
+        margin-right: 7vw;
+    }
+    .benner_under_nav_header {
+        margin-top: 3vh;
+        font-size: 2.5rem;
+
+    }
+    .benner_under_nav_papragrahp {
+        margin-top  : 7vh;
+        font-size: 4.5rem;
+      
+    }
+    .benner_under_nav_website_edu_fish {
+        margin-top: 20vh;
+        font-size: 2rem;
+     
+    }
+    .scroll_down_button {
+        margin-top: 27vh;
+        width: 10vw;
+    }
+    .tile-text-button {
+        width: 20vw;
+    }
+    .tile-description-container {
+        padding: 1%;
+    }
+    .tile-img-content {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .footer__top__right {
+        width: 60%;
+    }
 }
