@@ -19,21 +19,28 @@
 
     <!-- Nav bar section -->
     <div class="nav_bar">
-        <div class="nav_logo">AquaClub</div>
+        <a href="./index.html" class="nav_logo">AquaClub</a>
         <div class="nav_botton_container">
-            <a href="./home.html" class="nav_botton nb_home">Home</a>
+            <a onclick="topFunction()" id="got-button" class="nav_botton nb_home">Home</a>
 
         <!-- dropdown in nav section -->
             <div class="nav_botton nb_page">Page
               <div class="nav_dropdown_container">
-                <a href="#" target="_blank" class="nav_dropdown_content">สัตว์น้ำ</a>
-                <a href="#" target="_blank" class=" nav_dropdown_content">สัตว์น้ำคุ้มครอง</a>
-                <a href="#" target="_blank" class="nav_dropdown_content">content 3</a>
+                <a href="./aquatic_animals.html" target="_self" class="nav_dropdown_content">สัตว์น้ำ</a>
+                <a href="#" target="_self" class=" nav_dropdown_content">สัตว์น้ำคุ้มครอง</a>
               </div>
             </div>
              <a href="./about_us.html" class="nav_botton nb_about_us">About us</a>
-             <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class=" nb_contact">Contact</a>
+             <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class=" nb_contact">Contact</a>
+             <img onclick="dropdown()"  src="./assets/image/icon/mobile/dropdown-icon-mobile.svg" alt="icon" class="dropdown-mobile">
         </div>
+    </div>
+    <!-- mobile dropdown invisible on normal -->
+    <div id="dropdown" class="mobile-dropdown-menu-container">
+        <a onclick="topFunction()" id="got-button" class="mobile-dropdown-menu-element">Home</a>
+        <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="mobile-dropdown-menu-element">Contact</a>
+        <a href="./about_us.html" class="mobile-dropdown-menu-element">About us</a>
+        <script src="./js/home/mobile-dropdown.js"></script>
     </div>
     
     <!-- header title content -->
