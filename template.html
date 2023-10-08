@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./template.css">
+    <!-- favicon link section -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/image/favicon/favicon-16x16.png">
+    <title>Template | AquaClub</title>
+</head>
+<body>  
+    <!-- Go on top botton  -->
+    <button onclick="topFunction()" id="got-button" title="กลับขึ้นด้านบน" class="go-on-top-button">↑</button>
+
+    <!-- go on top button script -->
+  <script src="./js/home/scroll_button.js"></script>
+
+    <!-- Nav bar section -->
+    <div class="nav_bar">
+        <a href="./index.html" class="nav_logo">AquaClub</a>
+        <div class="nav_botton_container">
+            <a onclick="topFunction()" id="got-button" class="nav_botton nb_home">Home</a>
+
+        <!-- dropdown in nav section -->
+            <div class="nav_botton nb_page">Page
+              <div class="nav_dropdown_container">
+                <a href="./aquatic_animals.html" target="_self" class="nav_dropdown_content">สัตว์น้ำ</a>
+                <a href="#" target="_self" class=" nav_dropdown_content">สัตว์น้ำคุ้มครอง</a>
+              </div>
+            </div>
+             <a href="./about_us.html" class="nav_botton nb_about_us">About us</a>
+             <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class=" nb_contact">Contact</a>
+             <img onclick="dropdown()"  src="./assets/image/icon/mobile/dropdown-icon-mobile.svg" alt="icon" class="dropdown-mobile">
+        </div>
+    </div>
+    <!-- mobile dropdown invisible on normal -->
+    <div id="dropdown" class="mobile-dropdown-menu-container">
+        <a onclick="topFunction()" id="got-button" class="mobile-dropdown-menu-element">Home</a>
+        <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="mobile-dropdown-menu-element">Contact</a>
+        <a href="./about_us.html" class="mobile-dropdown-menu-element">About us</a>
+        <script src="./js/home/mobile-dropdown.js"></script>
+    </div>
+    
+<!-- ที่โล่งตรงนี้เอาไว้เสำหรับขียน -->
+<!-- ปล.อย่าลืมลบตรงนี้ออกด้วย -->
+
+
+
+
+
+
+    <!-- footer section -->
+    <div class="footer">
+        <div class="footer__top">
+            <div class="footer__top__left">
+                <img src="./assets/image/footer-img/footer-logo.png" alt="footer logo" class="footer__logo">
+                <p class="footer__name">Thanawat M.</p>
+                <p class="footer__name">Atip K.</p>
+                <p class="footer__name">Panmanee S.</p>
+            </div>
+            <div class="footer__top__right">
+                <a onclick="topFunction()" id="got-button" class="footer__button">Home</a>
+                <a href="./about_us.html" class="footer__button">About us</a>
+                <a href="" class="footer__button">Contact</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="websitefor">Marine animals & Endangered ocean species educational website</p>
+        </div>
+    </body>
+</html>

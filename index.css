@@ -1,8 +1,8 @@
-    @import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,1000&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=K2D:wght@200;400;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;700;800;900&display=swap');
 
     
     /* all in one section */
@@ -242,6 +242,29 @@ transform-origin: bottom left;
     background-color: white;
     color: black;
 }
+.slider-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+  
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.dot.active {
+    background-color: #333;
+}
+
+
 
 
     /* tile content section */
@@ -305,19 +328,23 @@ transform-origin: bottom left;
 }
 
 
-    /* footer section */
+/* footer section */
 .footer {
-    padding: 0.3rem 4rem;
+    padding: 0.3rem 3rem;
     font-family: 'Prompt', sans-serif;
     font-weight: 200;
     background-color: #0A2647;
 }
+
 .footer__top {
     display: flex;
+    height: 3.5rem;
 }
+
 .footer__top__left {
     width: 100%;
 }
+
 .footer__top__right {
     margin-top: 4%;
     display: flex;
@@ -325,15 +352,18 @@ transform-origin: bottom left;
     width: 40%;
     justify-content: space-between;
 }
+
 .footer__logo {
     margin: 4%;
-    width: 10%;
+    width: 7%;
     margin-bottom: 0.5rem;
 }
+
 .footer__name {
     color: #fcfcfc;
     font-size: 0.3rem;
 }
+
 .footer__button {
     font-size: 0.3rem;
     height: 2rem;
@@ -347,7 +377,7 @@ transform-origin: bottom left;
 }
 
 .websitefor {
-    font-size: 0.4rem;
+    font-size: 0.3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -357,7 +387,7 @@ transform-origin: bottom left;
     border-top: 0.01rem solid #fcfcfc;
     color: #fcfcfc;
 }
-
+    
 @media only screen and (max-width: 720px){
     /* go on top button */
 .go-on-top-button {
@@ -459,6 +489,10 @@ body {
 .scroll_down_button:hover {
     background-color: white;
     color: black;
+}
+.slider-dots {
+    position: absolute;
+    z-index: 110;
 }
 
 /* tile before tile section */

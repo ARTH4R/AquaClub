@@ -182,6 +182,90 @@ transform-origin: bottom left;
     color: #FFF;
 }
 
+/* about us header section */
+.about-us-header-text {
+    margin-top: 5vh;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.7rem;
+}
+
+
+/* about us description section */
+.about-us-container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.profile-box {
+    position: relative;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 65vh;
+    width: 20vw;
+    background-color: #fcfcfc;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.profile-image {
+    border: #fcfcfc solid 0.08rem;
+    z-index: 5;
+    max-width: 100%;
+    margin-top: 0.9rem;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+}
+.profile-background {
+    width: 60vh;
+    height: 20vh;
+    position: absolute;
+    z-index: 4;
+    
+}
+
+
+.profile-header-text {
+    text-align: left;
+    margin-top: 3vh;
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.5rem;
+}
+.profile-description {
+    font-family: 'Prompt', sans-serif;
+    font-size: 0.3rem;
+    color: rgba(0, 0, 0, 0.701);
+}
+
+.profile-button {
+    width: 100%;
+    height: 1rem;
+    margin-top: 20vh;
+    font-size: 0.3rem;
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: hsl(212, 75%, 16%);
+    
+}
+.profile-button:hover .profile-button-text {
+    transform: scale(1.1);
+}
+.profile-button-text {
+    text-align: center;
+    width: 100%;
+    color: #fcfcfc;
+    transition: transform .2s;
+}
+
+
+
+
+
     /* description section */
 .description-container {
     display: flex;
@@ -207,9 +291,14 @@ transform-origin: bottom left;
     font-size: 0.3rem;
 }
 
+
+
+
+
+
     /* footer section */
 .footer {
-    padding: 0.3rem 4rem;
+    padding: 0.3rem 3rem;
     font-family: 'Prompt', sans-serif;
     font-weight: 200;
     background-color: #0A2647;
@@ -217,6 +306,7 @@ transform-origin: bottom left;
 
 .footer__top {
     display: flex;
+    height: 3.5rem;
 }
 
 .footer__top__left {
@@ -233,7 +323,7 @@ transform-origin: bottom left;
 
 .footer__logo {
     margin: 4%;
-    width: 10%;
+    width: 7%;
     margin-bottom: 0.5rem;
 }
 
@@ -255,7 +345,7 @@ transform-origin: bottom left;
 }
 
 .websitefor {
-    font-size: 0.4rem;
+    font-size: 0.3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
