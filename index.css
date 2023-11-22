@@ -181,6 +181,42 @@ transform-origin: bottom left;
     color: #FFF;
 }
 
+/* contact overlay section */
+
+.background-overlay-color {
+    margin-top: 0;
+    z-index: 999;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.358);
+}
+.contact-container {
+    overflow: hidden;
+    z-index: 1000;
+    position: fixed;
+    color: black;
+    background-color: white;
+    height: 80vh;
+    width: 60vw;
+    top: 13%;
+    left: 20%;
+    border-radius: 20px;
+    font-family: 'manrope', sans-serif; 
+    display: flex;
+}
+.contact-img {
+    width: 30vw;
+    height: 80vh;
+}
+.container-contact-left {
+    width: 50%;
+}
+.container-contact {
+    width: 50%;
+}
+
+
 
     /* benner under nav section */
 .benner_pic_slide_show {

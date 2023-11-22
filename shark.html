@@ -21,7 +21,7 @@
     <div class="nav_bar">
         <a href="./index.html" class="nav_logo">AquaClub</a>
         <div class="nav_botton_container">
-            <a href="./index.html" class="nav_botton nb_home">Home</a>
+            <a onclick="topFunction()" id="got-button" class="nav_botton nb_home">Home</a>
 
         <!-- dropdown in nav section -->
             <div class="nav_botton nb_page">Page
@@ -48,6 +48,14 @@
         <div class="content">
             <div class="content__image">
                 <img class="content__image" src="./assets/image/Aquatic Animal/blacktip-shark/blacktip-shark.jpg" alt="">
+                <div class="credit">
+                    <p class="credit__image">ภาพประกอบ⠀:⠀</p>
+                    <a href="https://pixabay.com/th/users/wildfaces-932734/" class="credit__image__name">Wildfaces</a>
+                </div>
+                <div class="credit">
+                    <p class="credit__image">บทความ⠀:⠀</p>
+                    <a href="" class="credit__image__name"> Wikipedia</a>
+                </div>
             </div>
             <div class="content__topic">
                 <h1 class="content__topic__th">ฉลาม</h1>
@@ -58,18 +66,6 @@
                 <h1 class="content__topic__anecdote">เกร็ดเล็กเกร็ดน้อย</h1>
             </div>
                 <p class="content__paragraph">ปลาฉลามมีความสำคัญต่อมนุษย์ในแง่ของการบริโภคเป็นอาหาร โดยเฉพาะในอาหารจีนที่เรียกว่า "หูฉลาม" ซึ่งทำมาจากครีบของปลาฉลาม จัดเป็นอาหารที่มีราคาแพง ทำให้มีการล่าฉลามในการนี้จนเกือบจะสูญพันธุ์ในหลายชนิด และยังนิยมในการตกปลาเป็นเกมกีฬาอีกด้วย</p>
-            <!-- <div class="animalspecies">
-                <h1 class="content__topic__animalspecies">สายพันธุ์</h1>
-                <div class="animalspecies__content">
-                    <div class="spices-image-hover">
-                        <div class="spices-text st1">โลมาลายจุด</div>
-                        <div class="spices-text st2">Spotted Dolphin</div>
-                    </div>
-                    <div class="spices-overflow">
-                        <img src="./assets/image/shark-5485362_1280.jpg" alt="" class="spices-image">
-                    </div>
-                </div>
-            </div> -->
         </div>
         <div class="sidebar">
             <div class="sidebar__section">
@@ -78,30 +74,28 @@
                     <a href="./dolphin.html" class="sidebar__marineanimals">โลมา</a>
                     <a href="./shark.html" class="sidebar__marineanimals">ฉลาม</a>
                     <a href="./whale.html" class="sidebar__marineanimals">วาฬ</a>
-                    <a href="" class="sidebar__marineanimals">กุ้ง</a>
-                    <a href="" class="sidebar__marineanimals">ปลา</a>
-                    <a href="" class="sidebar__marineanimals">เต่า</a>
-                    <a href="" class="sidebar__marineanimals">นาก</a>
-                    <a href="" class="sidebar__marineanimals">เพนกวิน</a>
-                    <a href="" class="sidebar__marineanimals">ปลาหมึก</a>
-                    <a href="" class="sidebar__marineanimals">แมงกะพรุน</a>
-                    <a href="" class="sidebar__marineanimals">หอย</a>
-                    <a href="" class="sidebar__marineanimals">แพลงก์ตอน</a>
-                    <a href="" class="sidebar__marineanimals">แมลงน้ำ</a>
-                    <a href="" class="sidebar__marineanimals">ฟองน้ำ</a>
-                    <a href="" class="sidebar__marineanimals">ปะการัง</a>
+                    <a href="./shrimp.html" class="sidebar__marineanimals">กุ้ง</a>
+                    <a href="./fish.html" class="sidebar__marineanimals">ปลา</a>
+                    <a href="./turtle.html" class="sidebar__marineanimals">เต่า</a>
+                    <a href="./otter.html" class="sidebar__marineanimals">นาก</a>
+                    <a href="./penguin.html" class="sidebar__marineanimals">เพนกวิน</a>
+                    <a href="./octopus.html" class="sidebar__marineanimals">หมึก</a>
+                    <a href="./jellyfish.html" class="sidebar__marineanimals">แมงกะพรุน</a>
+                    <a href="./clam.html" class="sidebar__marineanimals">หอย</a>
+                    <a href="./porifera.html" class="sidebar__marineanimals">ฟองน้ำ</a>
+                    <a href="./coral.html" class="sidebar__marineanimals">ปะการัง</a>
                 </div>
                 <div class="endangeredoceanspicies">
                     <h3 class="animals endangeredoceanspecies">Endangered ocean species</h3>
-                    <a href="" class="sidebar__marineanimals">พะยูน</a>
-                    <a href="" class="sidebar__marineanimals">ปลาโรนิน</a>
-                    <a href="" class="sidebar__marineanimals">ปลากระเบนปีศาจ</a>
-                    <a href="" class="sidebar__marineanimals">ปลากระเบนราหูยักษ์</a>
-                    <a href="" class="sidebar__marineanimals">วาฬบลูด้า</a>
-                    <a href="" class="sidebar__marineanimals">วาฬโอมุระ</a>
-                    <a href="" class="sidebar__marineanimals">ฉลามเสือดาว</a>
-                    <a href="" class="sidebar__marineanimals">ฉลามวาฬ</a>
-                    <a href="" class="sidebar__marineanimals">เต่ามะเฟือง</a>
+                    <a href="./dugong.html" class="sidebar__marineanimals">พะยูน</a>
+                    <a href="./bowmouthguitarfish.html" class="sidebar__marineanimals">ปลาโรนิน</a>
+                    <a href="./devilrays.html" class="sidebar__marineanimals">ปลากระเบนปีศาจ</a>
+                    <a href="./mantarays.html" class="sidebar__marineanimals">ปลากระเบนราหูยักษ์</a>
+                    <a href="./brydewhale.html" class="sidebar__marineanimals">วาฬบลูด้า</a>
+                    <a href="./omurawhale.html" class="sidebar__marineanimals">วาฬโอมุระ</a>
+                    <a href="./leopardshark.html" class="sidebar__marineanimals">ฉลามเสือดาว</a>
+                    <a href="./whaleshark.html" class="sidebar__marineanimals">ฉลามวาฬ</a>
+                    <a href="./leatherbackturtle.html" class="sidebar__marineanimals">เต่ามะเฟือง</a>
                 </div>
             </div>
         </div>

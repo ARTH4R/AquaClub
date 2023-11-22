@@ -239,8 +239,6 @@ transform-origin: bottom left;
     margin-top: 7%;
 }
 
-
-
 /* sidebar section */
 .sidebar {
     width: 15%;
@@ -282,15 +280,6 @@ transform-origin: bottom left;
 .sidebar__marineanimals:hover {
     color: #6dbbff;
 }
-
-
-
-
-
-
-
-
-
 
 /* footer section */
 .footer {
@@ -361,6 +350,31 @@ transform-origin: bottom left;
         margin-right: 10%;
         border-top: 0.01rem solid #fcfcfc;
         color: #fcfcfc;
+    }
+
+    /* credit */
+    .credit {
+        display: flex;
+        justify-content: right;
+        margin: 0;
+        padding: 0;
+        font-size: 0.3rem;
+    }
+
+    .credit__image {
+        margin: 0;
+        padding: 0;
+        font-weight: 500;
+        color: #0A2647;
+    }
+
+    .credit__image__name {
+        font-weight: 500;
+        color: #0A2647;
+    }
+
+    .credit__image__name:hover {
+        color: #144272;
     }
     
 @media only screen and (max-width: 720px){

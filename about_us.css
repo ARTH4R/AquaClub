@@ -34,7 +34,7 @@ a {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: hsl(212, 75%, 16%);
+    background-color: #0a2747;
     color: white;
     padding: 15px;
     border-radius: 4px;
@@ -200,7 +200,6 @@ transform-origin: bottom left;
 }
 .profile-box {
     position: relative;
-    border-radius: 5%;
     display: flex;
     align-items: center;
     flex-direction: column;
