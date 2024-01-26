@@ -260,7 +260,6 @@ transform-origin: bottom left;
     justify-content: space-evenly;
 }
 .content_container {
-    border-top: 0.2rem solid #144272;
     width: 20vw;
     height: 70vh;
     background-color: #FFF;

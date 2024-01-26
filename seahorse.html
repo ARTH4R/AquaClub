@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./seahorse.css">
+    <!-- favicon link section -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/image/favicon/favicon-16x16.png">
+    <title>Sea hoorse | AquaClub</title>
+</head>
+<body>  
+    <!-- Go on top botton  -->
+    <button onclick="topFunction()" id="got-button" title="กลับขึ้นด้านบน" class="go-on-top-button">↑</button>
+
+    <!-- go on top button script -->
+  <script src="./js/home/scroll_button.js"></script>
+
+    <!-- Nav bar section -->
+    <div class="nav_bar">
+        <a href="./index.html" class="nav_logo">AquaClub</a>
+        <div class="nav_botton_container">
+            <a onclick="topFunction()" id="got-button" class="nav_botton nb_home">Home</a>
+
+        <!-- dropdown in nav section -->
+            <div class="nav_botton nb_page">Page
+              <div class="nav_dropdown_container">
+                <a href="./aquatic_animals.html" target="_self" class="nav_dropdown_content">สัตว์น้ำ</a>
+                <a href="#" target="_self" class=" nav_dropdown_content">สัตว์น้ำคุ้มครอง</a>
+              </div>
+            </div>
+             <a href="./about_us.html" class="nav_botton nb_about_us">About us</a>
+             <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class=" nb_contact">Contact</a>
+             <img onclick="dropdown()"  src="./assets/image/icon/mobile/dropdown-icon-mobile.svg" alt="icon" class="dropdown-mobile">
+        </div>
+    </div>
+    <!-- mobile dropdown invisible on normal -->
+    <div id="dropdown" class="mobile-dropdown-menu-container">
+        <a onclick="topFunction()" id="got-button" class="mobile-dropdown-menu-element">Home</a>
+        <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="mobile-dropdown-menu-element">Contact</a>
+        <a href="./about_us.html" class="mobile-dropdown-menu-element">About us</a>
+        <script src="./js/home/mobile-dropdown.js"></script>
+    </div>
+    
+<!-- container section -->
+    <div class="container">
+        <div class="content">
+            <div class="content__image">
+                <img class="content__image" src="./assets/image/Aquatic Animal/sea-horse/seahorse-image.jpg" alt="">
+                <div class="credit">
+                    <p class="credit__image">ภาพประกอบ⠀:⠀</p>
+                    <a href="https://pixabay.com/th/users/arhnue-1896944/" class="credit__image__name"> arhnue</a>
+                </div>
+                <div class="credit">
+                    <p class="credit__image">บทความ⠀:⠀</p>
+                    <a href="https://th.wikipedia.org/wiki/%E0%B8%A1%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%89%E0%B8%B3" class="credit__image__name"> Wikipedia</a>
+                </div>
+            </div>
+            <div class="content__topic">
+                <h1 class="content__topic__th">ม้าน้ำ</h1>
+                <h1 class="content__topic__en">Sea horse</h1>
+            </div>
+                <p class="content__paragraph">ม้าน้ำเป็นปลาที่มีรูปร่างลักษณะแตกต่างไปจากปลาชนิดอื่น ๆ อย่างเห็นได้ชัดคือมีกระดูกหรือก้างมาห่อหุ้มเป็นเกราะอยู่ภายนอกตัวแทนเกล็ด ส่วนหางของแทนที่จะเป็นครีบสำหรับว่ายน้ำไปมาอย่างปลาชนิดอื่น กลับมีหางยาวเหมือนสัตว์เลื้อยคลาน มีไว้เพียงเพื่อเกี่ยวยึดตัวเองกับพืชน้ำหรือปะการังในน้ำ มีครีบอกและมีครีบบางใสตรงเอวอีกครีบหนึ่งช่วยโบกพัดกระพือ โดยครีบทั้ง 2 นี้จะโบกพัดด้วยความเร็วประมาณ 20-30 ครั้งต่อวินาที ทำให้เคลื่อนไหวไปมาได้อย่างช้า ๆ ซึ่งโดยปกติแล้วม้าน้ำมักจะว่ายน้ำเป็นไปในลักษณะขึ้น-ลง มากกว่าไปมาข้างหน้า-ข้างหลังเหมือนปลาชนิดอื่น โดยถือเป็นปลาที่ว่ายน้ำช้าที่สุดในโลกอีกด้วย</p>
+            <div class="content__topic">
+                <h1 class="content__topic__anecdote">เกร็ดเล็กเกร็ดน้อย</h1>
+            </div>
+                <p class="content__paragraph">ตัวผู้จะเป็นฝ่ายอุ้มท้อง โดยมีอวัยวะตรงบริเวณหน้าท้องคล้ายถุง ใช้สำหรับเก็บไข่และฟักเป็นตัว</p>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar__section">
+                <div class="marineanimals">
+                    <h3 class="animals">Marine animals</h3>
+                    <a href="./dolphin.html" class="sidebar__marineanimals">โลมา</a>
+                    <a href="./shark.html" class="sidebar__marineanimals">ฉลาม</a>
+                    <a href="./whale.html" class="sidebar__marineanimals">วาฬ</a>
+                    <a href="./shrimp.html" class="sidebar__marineanimals">กุ้ง</a>
+                    <a href="./fish.html" class="sidebar__marineanimals">ปลา</a>
+                    <a href="./turtle.html" class="sidebar__marineanimals">เต่า</a>
+                    <a href="./otter.html" class="sidebar__marineanimals">นาก</a>
+                    <a href="./penguin.html" class="sidebar__marineanimals">เพนกวิน</a>
+                    <a href="./octopus.html" class="sidebar__marineanimals">หมึก</a>
+                    <a href="./jellyfish.html" class="sidebar__marineanimals">แมงกะพรุน</a>
+                    <a href="./clam.html" class="sidebar__marineanimals">หอย</a>
+                    <a href="./starfish.html" class="sidebar__marineanimals">ดาวทะเล</a>
+                    <a href="./seahorse.html" class="sidebar__marineanimals">ม้าน้ำ</a>
+                    <a href="./porifera.html" class="sidebar__marineanimals">ฟองน้ำ</a>
+                    <a href="./coral.html" class="sidebar__marineanimals">ปะการัง</a>
+                </div>
+                <div class="endangeredoceanspicies">
+                    <h3 class="animals endangeredoceanspecies">Endangered ocean species</h3>
+                    <a href="./dugong.html" class="sidebar__marineanimals">พะยูน</a>
+                    <a href="./bowmouthguitarfish.html" class="sidebar__marineanimals">ปลาโรนิน</a>
+                    <a href="./devilrays.html" class="sidebar__marineanimals">ปลากระเบนปีศาจ</a>
+                    <a href="./mantarays.html" class="sidebar__marineanimals">ปลากระเบนราหูยักษ์</a>
+                    <a href="./brydewhale.html" class="sidebar__marineanimals">วาฬบลูด้า</a>
+                    <a href="./omurawhale.html" class="sidebar__marineanimals">วาฬโอมุระ</a>
+                    <a href="./leopardshark.html" class="sidebar__marineanimals">ฉลามเสือดาว</a>
+                    <a href="./whaleshark.html" class="sidebar__marineanimals">ฉลามวาฬ</a>
+                    <a href="./leatherbackturtle.html" class="sidebar__marineanimals">เต่ามะเฟือง</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer section -->
+    <div class="footer">
+        <div class="footer__top">
+            <div class="footer__top__left">
+                <img src="./assets/image/footer-img/footer-logo.png" alt="footer logo" class="footer__logo">
+                <p class="footer__name">Thanawat M.</p>
+                <p class="footer__name">Atip K.</p>
+                <p class="footer__name">Panmanee S.</p>
+            </div>
+            <div class="footer__top__right">
+                <a onclick="topFunction()" id="got-button" class="footer__button">Home</a>
+                <a href="./about_us.html" class="footer__button">About us</a>
+                <a href="" class="footer__button">Contact</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="websitefor">Marine animals & Endangered ocean species educational website</p>
+        </div>
+    </div>
+    </body>
+</html>
