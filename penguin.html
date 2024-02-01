@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./penguin.css">
+    <link rel="stylesheet" href="./animal-style.css">
     <!-- favicon link section -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/image/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/image/favicon/favicon-32x32.png">
@@ -17,30 +17,66 @@
     <!-- go on top button script -->
   <script src="./js/home/scroll_button.js"></script>
 
-    <!-- Nav bar section -->
-    <div class="nav_bar">
-        <a href="./index.html" class="nav_logo">AquaClub</a>
-        <div class="nav_botton_container">
-            <a href="./index.html" class="nav_botton nb_home">Home</a>
+ <!-- Nav bar section -->
+ <div class="nav_bar">
+    <a href="./index.html" class="nav_logo">AquaClub</a>
+    <div class="nav_botton_container">
+        <a href="./index.html" class="nav_botton nb_home">Home</a>
 
-        <!-- dropdown in nav section -->
-            <div class="nav_botton nb_page">Page
-              <div class="nav_dropdown_container">
-                <a href="./aquatic_animals.html" target="_self" class="nav_dropdown_content">สัตว์น้ำ</a>
-              </div>
-            </div>
-             <a href="./about_us.html" class="nav_botton nb_about_us">About us</a>
-             <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class=" nb_contact">Contact</a>
-             <img onclick="dropdown()"  src="./assets/image/icon/mobile/dropdown-icon-mobile.svg" alt="icon" class="dropdown-mobile">
+    <!-- dropdown in nav section -->
+        <div class="nav_botton nb_page">Page
+          <div class="nav_dropdown_container">
+            <a href="./aquatic_animals.html" target="_self" class="nav_dropdown_content">สัตว์น้ำ</a>
+          </div>
+        </div>
+         <a href="./about_us.html" class="nav_botton nb_about_us">About us</a>
+         <a onclick="ContactFunction()" class="nb_contact">Contact</a>
+
+        <script src="./js/nav/contant-button.js"></script>
+
+         <img onclick="dropdown()"  src="./assets/image/icon/mobile/dropdown-icon-mobile.svg" alt="icon" class="dropdown-mobile">
+    </div>
+</div>
+<!-- mobile dropdown invisible on normal -->
+<div id="dropdown" class="mobile-dropdown-menu-container">
+    <a onclick="topFunction()" id="got-button" class="mobile-dropdown-menu-element">Home</a>
+    <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="mobile-dropdown-menu-element">Contact</a>
+    <a href="./about_us.html" class="mobile-dropdown-menu-element">About us</a>
+    <script src="./js/home/mobile-dropdown.js"></script>
+</div>
+
+<!-- contract container -->
+<div class="contact-section" id="contact">
+<div class="contact-section-overlay-background contact-on-off"></div>
+<div class="contact-container contact-on-off">
+    <div class="contact-container-left">
+        <img src="./assets/image/home-contact-pic/beach-contact.png" alt="background" class="contact-pic">
+    </div>
+
+    <!-- contact section -->
+    <div class="contact-container-right">
+        <img onclick="ContactFunction()" src="./assets/image/icon/ui/close-button.png" alt="close" class="contact-close-button">
+
+        <div class="contact-header-container">
+            <div class="contact-header-text">Contact Us</div>
+        </div>
+            <!-- main contact container  -->
+            <div class="input-field-container-all">
+                    <input class="input-field" placeholder=" Enter Your Email...."  required type="text" id="email" name="email"><br><br>
+                    <textarea class="input-field comment-field" placeholder=" Enter Text Here..." name="comment"></textarea>
+
+
+                <div class="contact-send-to">ข้อความของคุณจะถูกส่งไปที่<div class="email-copy">Aquaclub@gmail.com</div></div>
+                    
+             </div>
+            
+        <div class="contact-button-container">
+            <div onclick="ContactFunction()" class="cancel-button contact-confirm-button">Cancel</div>
+            <div onclick="ContactFunction()"  class="submit-button contact-confirm-button">Submit</div>
         </div>
     </div>
-    <!-- mobile dropdown invisible on normal -->
-    <div id="dropdown" class="mobile-dropdown-menu-container">
-        <a onclick="topFunction()" id="got-button" class="mobile-dropdown-menu-element">Home</a>
-        <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="mobile-dropdown-menu-element">Contact</a>
-        <a href="./about_us.html" class="mobile-dropdown-menu-element">About us</a>
-        <script src="./js/home/mobile-dropdown.js"></script>
-    </div>
+</div>
+</div>
     
 <!-- container section -->
     <div class="container">

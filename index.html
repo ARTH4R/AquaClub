@@ -30,7 +30,9 @@
               </div>
             </div>
              <a href="./about_us.html" class="nav_botton nb_about_us">About us</a>
-             <a id="contactButton" class="nb_contact">Contact</a>
+             <a onclick="ContactFunction()" class="nb_contact">Contact</a>
+
+            <script src="./js/nav/contant-button.js"></script>
 
              <img onclick="dropdown()"  src="./assets/image/icon/mobile/dropdown-icon-mobile.svg" alt="icon" class="dropdown-mobile">
         </div>
@@ -44,7 +46,7 @@
     </div>
     
     <!-- contract container -->
-<div class="contact-section">
+<div class="contact-section" id="contact">
     <div class="contact-section-overlay-background contact-on-off"></div>
     <div class="contact-container contact-on-off">
         <div class="contact-container-left">
@@ -53,8 +55,8 @@
     
         <!-- contact section -->
         <div class="contact-container-right">
-            <img src="./assets/image/icon/ui/close-button.png" alt="close" class="contact-close-button">
-            <script src="./js/nav/contact-on-of.js"></script>
+            <img onclick="ContactFunction()" src="./assets/image/icon/ui/close-button.png" alt="close" class="contact-close-button">
+
             <div class="contact-header-container">
                 <div class="contact-header-text">Contact Us</div>
             </div>
@@ -69,8 +71,8 @@
                  </div>
                 
             <div class="contact-button-container">
-                <div class="cancel-button contact-confirm-button">Cancel</div>
-                <div class="submit-button contact-confirm-button">Submit</div>
+                <div onclick="ContactFunction()" class="cancel-button contact-confirm-button">Cancel</div>
+                <div onclick="ContactFunction()"  class="submit-button contact-confirm-button">Submit</div>
             </div>
         </div>
     </div>
