@@ -321,6 +321,8 @@ transform-origin: bottom left;
     font-size: 0.9rem;
     margin-left: 3.7vw;
     margin-top: 3vh;
+    font-weight: 700;
+    color: #0A2647;
     font-family: 'Prompt', sans-serif;
 }
 .header-container-text {
@@ -385,7 +387,7 @@ transform-origin: bottom left;
 
     /* content box section */
 .content_sector {
-    margin-top: 2%;
+    margin: 4% 0;
     display: flex;
     justify-content: space-evenly;
 }
