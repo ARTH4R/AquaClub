@@ -374,6 +374,7 @@ transform-origin: bottom left;
     right: 0;
     box-shadow: 0rem 0rem 0.2rem #000000;
     background-color: #0A2647;
+    position: fixed;
 }
 
 .sidebar__section {
@@ -410,7 +411,7 @@ transform-origin: bottom left;
 
 /* footer section */
 .footer {
-        width: 85%;
+        width: 100%;
         padding-bottom: 0.3rem;
         font-family: 'Prompt', sans-serif;
         font-weight: 200;
