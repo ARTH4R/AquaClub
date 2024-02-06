@@ -54,6 +54,7 @@ a {
 
     /* Nav section */
 .nav_logo {
+    margin-left: 2rem;    
     display: flex;
     font-size: 0.8rem;
     align-items: center;
@@ -68,10 +69,10 @@ a {
     height: 14vh;
     background-color: hsl(212, 75%, 16%);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 10000;
 }
 
     /* nav botton section */
@@ -160,9 +161,11 @@ a {
 transform: scaleX(1);
 transform-origin: bottom left;
 }
+
 .dropdown-mobile {
     display: none;
-    width: 15vw;
+    min-width: 15vw;
+    width: 15vw;    
     height: 15vh;
     filter: invert(100%) sepia(2%) saturate(1423%) hue-rotate(216deg) brightness(106%) contrast(98%);
 }
@@ -572,11 +575,12 @@ body {
     justify-content: center;
 }
 .nav_bar {
-    justify-content: none;
+    justify-content: space-between;
     width: 100%;
     height: 10vh;
 }
-    .nav_logo {
+.nav_logo {
+    margin: 0 0 0 0.5rem;
     font-size: 0.4rem;
 }
 .nav_botton {
@@ -587,7 +591,6 @@ body {
 }
 .dropdown-mobile {
     display: block;
-    margin-left: 12vh;
 }
 .benner_under_nav_pic {
     width: 100%;
@@ -600,18 +603,18 @@ body {
 
 
 /* benner under nav section */
+
 .bun_text {
-    text-align: center;
-    margin-right: 10vh;
+    text-align: left;
     font-family: 'Prompt', sans-serif;
     color: white;   
     font-weight: 300;
-    right: -40px;
     position: absolute;
+    left: 0.5rem;
 }
 .benner_under_nav_header {
     margin-top: 8vh;
-    font-size: 0.3rem;
+    font-size: 0.4rem;
     position: absolute;
 }
 .benner_under_nav_papragrahp {
@@ -681,6 +684,11 @@ body {
     display: flex;
     flex-direction: column-reverse;
 }
+.tile-content-container-row2 {
+    display: flex;
+    flex-direction: column;
+}
+
 .tile-left-content {
     width: 100%;
 }
@@ -702,7 +710,7 @@ body {
 }
 .tile-text-button {
     text-align: center;
-    width: 40vw;
+    width: 100%;
     margin-top: 3vh;
     font-size: 0.3rem;
     cursor: pointer;
@@ -716,9 +724,35 @@ body {
 .tile_button {
     color: black;
 }
-.tile-img-hidden {
-    display: none;
+
+/* description section */
+.description-container {
+    display: flex;
+    margin: 0 3% 3% 3%;
+    font-family: 'Prompt', sans-serif;
 }
+.description-text-header {
+    color: hsl(212, 75%, 16%);
+    font-size: 0.4rem;
+    font-weight: 500;
+}
+.description-img {
+    width: 100%;
+}
+.description-img-container-left{
+    width: 100vw;
+}
+.description-text-container-right {
+    width: 100vw;
+    margin: 3%;
+} 
+.description-text-paragraph {
+    font-size: 0.13rem;
+}
+    
+
+
+
 
 /* footer section */
 .footer {
@@ -736,23 +770,25 @@ body {
 
 .footer__top__left {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .footer__top__right {
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: space-between;
 }
 
 .footer__logo {
-    margin: 7%; 
-    width: 15%;
-    margin-bottom: 0.5rem;
+    display: none;
 }
 
 .footer__name {
     color: #fcfcfc;
-    font-size: 0.3rem;
+    font-size: 0.2rem;
 }
 
 .footer__button {
@@ -769,12 +805,12 @@ body {
 }
 
 .websitefor {
-    font-size: 0.3rem;
+    font-size: 0.2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     padding-top: 1.5rem;
     border-top: 0.01rem solid #fcfcfc;
     color: #fcfcfc;

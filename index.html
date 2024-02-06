@@ -40,7 +40,7 @@
     <!-- mobile dropdown invisible on normal -->
     <div id="dropdown" class="mobile-dropdown-menu-container">
         <a onclick="topFunction()" id="got-button" class="mobile-dropdown-menu-element">Home</a>
-        <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="mobile-dropdown-menu-element">Contact</a>
+        <a onclick="ContactFunction()" class="mobile-dropdown-menu-element">Contact</a>
         <a href="./about_us.html" class="mobile-dropdown-menu-element">About us</a>
         <script src="./js/home/mobile-dropdown.js"></script>
     </div>
@@ -85,9 +85,11 @@
     <!-- Banner under nav bar section -->
         <div class="benner_under_nav_container">
             <div class="benner_pic_slide_show">
-                        <div class="benner_under_nav_header bun_text">ยินดีต้อนรับสู่</div>
-                        <div class="benner_under_nav_papragrahp bun_text">AquaClub</div>
-                        <div class="benner_under_nav_website_edu_fish bun_text">เว็บไซต์การเรียนรู้เกี่ยวกับสัตว์ทะเล</div>
+                        <div class="bun-text-container">
+                            <div class="benner_under_nav_header bun_text">ยินดีต้อนรับสู่</div>
+                            <div class="benner_under_nav_papragrahp bun_text">AquaClub</div>
+                            <div class="benner_under_nav_website_edu_fish bun_text">เว็บไซต์การเรียนรู้เกี่ยวกับสัตว์ทะเล</div>
+                        </div>
                         <div id="scroll_down_button" onclick="downFunction()" class="benner_under_nav_button scroll_down_button bun_text">เริ่มต้น</div>
                         <div class="slider-dots">
                             <span class="dot"></span>
@@ -169,7 +171,7 @@
             <div class="footer__top__right">
                 <a onclick="topFunction()" id="got-button" class="footer__button">Home</a>
                 <a href="./about_us.html" class="footer__button">About us</a>
-                <a href="" class="footer__button">Contact</a>
+                <a onclick="ContactFunction()" class="footer__button">Contact</a>
             </div>
         </div>
         <div class="footer__bottom">
