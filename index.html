@@ -19,22 +19,31 @@
 
     <!-- Nav bar section -->
     <div class="nav_bar">
-        <a href="./index.html" class="nav_logo">AquaClub</a>
+        <div class="nav-logo">
+            <a onclick="topFunction()" class="nav-logo-overlay nav-img-logo"></a>
+            <img src="./assets/image/nav/aquaclub logo.png" alt="web-logo" class="nav-img-logo">
+        </div>
         <div class="nav_botton_container">
             <a onclick="topFunction()" id="got-button" class="nav_botton nb_home">Home</a>
 
         <!-- dropdown in nav section -->
-            <div class="nav_botton nb_page">Page
-              <div class="nav_dropdown_container">
-                <a href="./aquatic_animals.html" target="_self" class="nav_dropdown_content">สัตว์น้ำ</a>
-              </div>
-            </div>
+                <div class="nav_botton nb_page">Page
+                    <div class="nav_dropdown_container">
+                        <a href="./aquatic_animals.html" target="_self" class="nav_dropdown_content">สัตว์น้ำ</a>
+                    </div>
+                 </div>
              <a href="./about_us.html" class="nav_botton nb_about_us">About us</a>
              <a onclick="ContactFunction()" class="nb_contact">Contact</a>
 
             <script src="./js/nav/contant-button.js"></script>
 
-             <img onclick="dropdown()"  src="./assets/image/icon/mobile/dropdown-icon-mobile.svg" alt="icon" class="dropdown-mobile">
+
+            <div onclick="dropdown()" class="dropdown-mobile-line-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+             
         </div>
     </div>
     <!-- mobile dropdown invisible on normal -->
@@ -134,7 +143,7 @@
         <div class="tile-right-content">    
             <div class="tile-description-container">
                 <div class="tile-text-content tile-text-header">สัตว์ทะเลคุ้มครอง</div>
-                <div class="tile-text-content tile-text-description">สัตว์ทะเลลดลงจำนวนมากและเสี่ยงสูญพันธุ์ เกิดจากกิจกรรมมนุษย์และการเปลี่ยนแปลงสภาพแวดล้อมทะเล เช่น การล่าล้างอาศัย, มลพิษน้ำ, การเปลี่ยนแปลงสภาพอากาศ และปัจจัยอื่น ทำให้จดทะเบียนในรายชื่อสัตว์ใกล้สูญพันธุ์ของ IUCN ในหมวด "ใกล้สูญพันธุ์" หรือ "วิกฤต"</div>
+                <div class="tile-text-content tile-text-description">สัตว์ทะเลลดลงจำนวนมากและเสี่ยงสูญพันธุ์ เกิดจากกิจกรรมมนุษย์และการเปลี่ยนแปลงสภาพแวดล้อมทะเล เช่น การล่าล้างอาศัย, มลพิษน้ำ, การเปลี่ยนแปลงสภาพอากาศ และปัจจัยอื่นทำให้จดทะเบียนในรายชื่อสัตว์ใกล้สูญพันธุ์ของ IUCN ในหมวด "ใกล้สูญพันธุ์" หรือ "วิกฤต"</div>
                     <div class="tile-text-content tile-text-button">
                         <a class="tile_button" href="./aquatic_animal-c2.html">เรียนรู้เพิ่มเติม</a>
                     </div>
@@ -161,17 +170,22 @@
 
     <!-- footer section -->
     <div class="footer">
-        <div class="footer__top">
-            <div class="footer__top__left">
+        <div class="footer__top-main">
+            <div class="footer__top">
                 <img src="./assets/image/footer-img/footer-logo.png" alt="footer logo" class="footer__logo">
-                <p class="footer__name">Thanawat M.</p>
-                <p class="footer__name">Atip K.</p>
-                <p class="footer__name">Panmanee S.</p>
+
+                <div class="footer-button-container">
+                    <a onclick="topFunction()" id="got-button" class="footer__button">Home</a>
+                    <a href="./about_us.html" class="footer__button">About us</a>
+                    <a onclick="ContactFunction()" class="footer__button">Contact</a>
+                </div>
             </div>
-            <div class="footer__top__right">
-                <a onclick="topFunction()" id="got-button" class="footer__button">Home</a>
-                <a href="./about_us.html" class="footer__button">About us</a>
-                <a onclick="ContactFunction()" class="footer__button">Contact</a>
+            <div class="footer__mid">
+                <div class="footer-name-container">
+                    <p class="footer__name">Thanawat M.</p>
+                    <p class="footer__name">Atip K.</p>
+                    <p class="footer__name">Panmanee S.</p>
+                </div>
             </div>
         </div>
         <div class="footer__bottom">
