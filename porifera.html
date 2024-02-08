@@ -11,71 +11,74 @@
     <title>Porifera | AquaClub</title>
 </head>
 <body>  
-    <!-- Go on top botton  -->
-    <button onclick="topFunction()" id="got-button" title="กลับขึ้นด้านบน" class="go-on-top-button">↑</button>
-
-    <!-- go on top button script -->
-  <script src="./js/home/scroll_button.js"></script>
-
- <!-- Nav bar section -->
- <div class="nav_bar">
-    <a href="./index.html" class="nav_logo">AquaClub</a>
-    <div class="nav_botton_container">
-        <a href="./index.html" class="nav_botton nb_home">Home</a>
-
-    <!-- dropdown in nav section -->
-        <div class="nav_botton nb_page">Page
-          <div class="nav_dropdown_container">
-            <a href="./aquatic_animals.html" target="_self" class="nav_dropdown_content">สัตว์น้ำ</a>
-          </div>
+    <!-- Nav bar section -->
+    <div class="nav_bar">
+        <div class="nav-logo">
+            <a href="./index.html" class="nav-logo-overlay nav-img-logo"></a>
+            <img src="./assets/image/nav/aquaclub logo.png" alt="web-logo" class="nav-img-logo">
         </div>
-         <a href="./about_us.html" class="nav_botton nb_about_us">About us</a>
-         <a onclick="ContactFunction()" class="nb_contact">Contact</a>
+        <div class="nav_botton_container">
+            <a href="./index.html" id="got-button" class="nav_botton nb_home">Home</a>
 
-        <script src="./js/nav/contant-button.js"></script>
+        <!-- dropdown in nav section -->
+                <div class="nav_botton nb_page">Page
+                    <div class="nav_dropdown_container">
+                        <a href="./aquatic_animals.html" target="_self" class="nav_dropdown_content">สัตว์น้ำ</a>
+                    </div>
+                 </div>
+             <a href="./about_us.html" class="nav_botton nb_about_us">About us</a>
+             <a onclick="ContactFunction()" class="nb_contact">Contact</a>
 
-         <img onclick="dropdown()"  src="./assets/image/icon/mobile/dropdown-icon-mobile.svg" alt="icon" class="dropdown-mobile">
+            <script src="./js/nav/contant-button.js"></script>
+
+
+            <div onclick="dropdown()" class="dropdown-mobile-line-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+             
+        </div>
     </div>
-</div>
-<!-- mobile dropdown invisible on normal -->
-<div id="dropdown" class="mobile-dropdown-menu-container">
-    <a onclick="topFunction()" id="got-button" class="mobile-dropdown-menu-element">Home</a>
-    <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="mobile-dropdown-menu-element">Contact</a>
-    <a href="./about_us.html" class="mobile-dropdown-menu-element">About us</a>
-    <script src="./js/home/mobile-dropdown.js"></script>
-</div>
-
-<!-- contract container -->
+    <!-- mobile dropdown invisible on normal -->
+    <div id="dropdown" class="mobile-dropdown-menu-container">
+        <a onclick="topFunction()" id="got-button" class="mobile-dropdown-menu-element">Home</a>
+        <a onclick="ContactFunction()" class="mobile-dropdown-menu-element">Contact</a>
+        <a href="./about_us.html" class="mobile-dropdown-menu-element">About us</a>
+        <script src="./js/home/mobile-dropdown.js"></script>
+    </div>
+    
+    <!-- contract container -->
 <div class="contact-section" id="contact">
-<div class="contact-section-overlay-background contact-on-off"></div>
-<div class="contact-container contact-on-off">
-    <div class="contact-container-left">
-        <img src="./assets/image/home-contact-pic/beach-contact.png" alt="background" class="contact-pic">
-    </div>
-
-    <!-- contact section -->
-    <div class="contact-container-right">
-        <img onclick="ContactFunction()" src="./assets/image/icon/ui/close-button.png" alt="close" class="contact-close-button">
-
-        <div class="contact-header-container">
-            <div class="contact-header-text">Contact Us</div>
+    <div class="contact-section-overlay-background contact-on-off"></div>
+    <div class="contact-container contact-on-off">
+        <div class="contact-container-left">
+            <img src="./assets/image/home-contact-pic/beach-contact.png" alt="background" class="contact-pic">
         </div>
-            <!-- main contact container  -->
-            <div class="input-field-container-all">
-                    <input class="input-field" placeholder=" Enter Your Email...."  required type="text" id="email" name="email"><br><br>
-                    <textarea class="input-field comment-field" placeholder=" Enter Text Here..." name="comment"></textarea>
+    
+        <!-- contact section -->
+        <div class="contact-container-right">
+            <img onclick="ContactFunction()" src="./assets/image/icon/ui/close-button.png" alt="close" class="contact-close-button">
+
+            <div class="contact-header-container">
+                <div class="contact-header-text">Contact Us</div>
+            </div>
+                <!-- main contact container  -->
+                <div class="input-field-container-all">
+                        <input class="input-field" placeholder=" Enter Your Email...."  required type="text" id="email" name="email"><br><br>
+                        <textarea class="input-field comment-field" placeholder=" Enter Text Here..." name="comment"></textarea>
 
 
-                <div class="contact-send-to">ข้อความของคุณจะถูกส่งไปที่<div class="email-copy">Aquaclub@gmail.com</div></div>
-                    
-             </div>
-            
-        <div class="contact-button-container">
-            <div onclick="ContactFunction()" class="cancel-button contact-confirm-button">Cancel</div>
-            <div onclick="ContactFunction()"  class="submit-button contact-confirm-button">Submit</div>
+                    <div class="contact-send-to">ข้อความของคุณจะถูกส่งไปที่<div class="email-copy">Aquaclub@gmail.com</div></div>
+                        
+                 </div>
+                
+            <div class="contact-button-container">
+                <div onclick="ContactFunction()" class="cancel-button contact-confirm-button">Cancel</div>
+                <div onclick="ContactFunction()"  class="submit-button contact-confirm-button">Submit</div>
+            </div>
         </div>
     </div>
-</div>
 </div>
     
 <!-- container section -->
@@ -147,22 +150,26 @@
 
     <!-- footer section -->
     <div class="footer">
-        <div class="footer__top">
-            <div class="footer__top__left">
+        <div class="footer__top-main">
+            <div class="footer__top">
                 <img src="./assets/image/footer-img/footer-logo.png" alt="footer logo" class="footer__logo">
-                <p class="footer__name">Thanawat M.</p>
-                <p class="footer__name">Atip K.</p>
-                <p class="footer__name">Panmanee S.</p>
+
+                <div class="footer-button-container">
+                    <a href="./index.html" id="got-button" class="footer__button">Home</a>
+                    <a href="./about_us.html" class="footer__button">About us</a>
+                    <a onclick="ContactFunction()" class="footer__button">Contact</a>
+                </div>
             </div>
-            <div class="footer__top__right">
-                <a onclick="topFunction()" id="got-button" class="footer__button">Home</a>
-                <a href="./about_us.html" class="footer__button">About us</a>
-                <a href="" class="footer__button">Contact</a>
+            <div class="footer__mid">
+                <div class="footer-name-container">
+                    <p class="footer__name">Thanawat M.</p>
+                    <p class="footer__name">Atip K.</p>
+                    <p class="footer__name">Panmanee S.</p>
+                </div>
             </div>
         </div>
         <div class="footer__bottom">
             <p class="websitefor">Marine animals & Endangered ocean species educational website</p>
         </div>
-    </div>
     </body>
 </html>

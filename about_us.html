@@ -11,39 +11,45 @@
     <title>About us | AquaClub</title>
 </head>
 <body>
-    <!-- Go on top botton  -->
-    <button onclick="topFunction()" id="got-button" title="กลับขึ้นด้านบน" class="go-on-top-button">↑</button>
-
     <!-- go on top button script -->
-  <script src="./js/home/scroll_button.js"></script>
-
-   <!-- Nav bar section -->
-   <div class="nav_bar">
-    <a href="./index.html" class="nav_logo">AquaClub</a>
-    <div class="nav_botton_container">
-        <a href="./index.html" class="nav_botton nb_home">Home</a>
-
-    <!-- dropdown in nav section -->
-        <div class="nav_botton nb_page">Page
-          <div class="nav_dropdown_container">
-            <a href="./aquatic_animals.html" target="_self" class="nav_dropdown_content">สัตว์น้ำ</a>
-          </div>
+    <script src="./js/home/scroll_button.js"></script>
+    
+    <!-- Nav bar section -->
+    <div class="nav_bar">
+        <div class="nav-logo">
+            <a onclick="topFunction()" class="nav-logo-overlay nav-img-logo"></a>
+            <img src="./assets/image/nav/aquaclub logo.png" alt="web-logo" class="nav-img-logo">
         </div>
-         <a href="./about_us.html" class="nav_botton nb_about_us">About us</a>
-         <a onclick="ContactFunction()" class="nb_contact">Contact</a>
-
-        <script src="./js/nav/contant-button.js"></script>
-
-         <img onclick="dropdown()"  src="./assets/image/icon/mobile/dropdown-icon-mobile.svg" alt="icon" class="dropdown-mobile">
+        <div class="nav_botton_container">
+            <a href="./index.html" id="got-button" class="nav_botton nb_home">Home</a>
+  
+        <!-- dropdown in nav section -->
+                <div class="nav_botton nb_page">Page
+                    <div class="nav_dropdown_container">
+                        <a href="./aquatic_animals.html" target="_self" class="nav_dropdown_content">สัตว์น้ำ</a>
+                    </div>
+                 </div>
+             <a href="./about_us.html" class="nav_botton nb_about_us">About us</a>
+             <a onclick="ContactFunction()" class="nb_contact">Contact</a>
+  
+            <script src="./js/nav/contant-button.js"></script>
+  
+  
+            <div onclick="dropdown()" class="dropdown-mobile-line-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+             
+        </div>
     </div>
-</div>
-<!-- mobile dropdown invisible on normal -->
-<div id="dropdown" class="mobile-dropdown-menu-container">
-    <a onclick="topFunction()" id="got-button" class="mobile-dropdown-menu-element">Home</a>
-    <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="mobile-dropdown-menu-element">Contact</a>
-    <a href="./about_us.html" class="mobile-dropdown-menu-element">About us</a>
-    <script src="./js/home/mobile-dropdown.js"></script>
-</div>
+    <!-- mobile dropdown invisible on normal -->
+    <div id="dropdown" class="mobile-dropdown-menu-container">
+        <a href="./index.html" id="got-button" class="mobile-dropdown-menu-element">Home</a>
+        <a onclick="ContactFunction()" class="mobile-dropdown-menu-element">Contact</a>
+        <a href="./about_us.html" class="mobile-dropdown-menu-element">About us</a>
+        <script src="./js/home/mobile-dropdown.js"></script>
+    </div>
 
 <!-- contract container -->
 <div class="contact-section" id="contact">
@@ -132,29 +138,34 @@
                     <div class="description-text-header">เกี่ยวกับเว็บไซต์</div>
                     <div class="description-text-paragraph">เป็นเว็บไซต์การศึกษาเกี่ยวกับสัตว์น้ำ หรือ เว็บไซต์การเรียนรู้เกี่ยวกับสัตว์ที่อาศัยในสิ่งแวดล้อมน้ำ" เป็นเว็บไซต์ที่มุ่งเน้นการศึกษาและการเรียนรู้เกี่ยวกับสัตว์น้ำที่อาศัยในสิ่งแวดล้อมน้ำ เช่น สัตว์น้ำทะเล, สัตว์น้ำจืด, สัตว์น้ำหวาน, และสัตว์น้ำที่อาศัยในริมน้ำ โดยเว็บไซต์นี้อาจให้ข้อมูลเกี่ยวกับชนิดของสัตว์น้ำ, พฤติกรรม, ที่อาศัย, การอนุรักษ์, และข้อมูลอื่นๆ เพื่อเสริมความเข้าใจและการค้นคว้าเกี่ยวกับสัตว์น้ำและสิ่งแวดล้อมน้ำในรูปแบบการเรียนรู้และการศึกษา</div>
                 </div>
-        </div>
-    </div>
-
-
-
-     <!-- footer section -->
-    <div class="footer">
-        <div class="footer__top">
-            <div class="footer__top__left">
-                <img src="./assets/image/footer-img/footer-logo.png" alt="" class="footer__logo">
-                <p class="footer__name">Thanawat M.</p>
-                <p class="footer__name">Atip K.</p>
-                <p class="footer__name">Panmanee S.</p>
-            </div>
-            <div class="footer__top__right">
-                <a href="./index.html" class="footer__button">Home</a>
-                <a href="./about_us.html" onclick="topFunction()" id="got-button" class="footer__button">About us</a>
-                <a href="" class="footer__button">Contact</a>
             </div>
         </div>
-        <div class="footer__bottom">
-            <p class="websitefor">Marine animals & Endangered ocean species educational website</p>
-        </div>
+        
+        
+        
+        <!-- footer section -->
+        <div class="footer">
+            <div class="footer__top-main">
+                <div class="footer__top">
+                    <img src="./assets/image/footer-img/footer-logo.png" alt="footer logo" class="footer__logo">
+    
+                    <div class="footer-button-container">
+                        <a onclick="topFunction()" id="got-button" class="footer__button">Home</a>
+                        <a href="./about_us.html" class="footer__button">About us</a>
+                        <a onclick="ContactFunction()" class="footer__button">Contact</a>
+                    </div>
+                </div>
+                <div class="footer__mid">
+                    <div class="footer-name-container">
+                        <p class="footer__name">Thanawat M.</p>
+                        <p class="footer__name">Atip K.</p>
+                        <p class="footer__name">Panmanee S.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="websitefor">Marine animals & Endangered ocean species educational website</p>
+            </div>
         <!-- link js script -->
         <script src="./js/home/scroll_button.js"></script>
 </body>

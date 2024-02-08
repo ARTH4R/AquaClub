@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./aquatic_animals.css">
+    <link rel="stylesheet" href="./aquatic_animal.css">
     <!-- favicon link section -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/image/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/image/favicon/favicon-32x32.png">
@@ -17,65 +17,74 @@
     <!-- go on top button script -->
   <script src="./js/home/scroll_button.js"></script>
 
-   <!-- Nav bar section -->
-   <div class="nav_bar">
-    <a href="./index.html" class="nav_logo">AquaClub</a>
-    <div class="nav_botton_container">
-        <a href="./index.html" class="nav_botton nb_home">Home</a>
-
-    <!-- dropdown in nav section -->
-        <div class="nav_botton nb_page">Page
-          <div class="nav_dropdown_container">
-            <a href="./aquatic_animals.html" target="_self" class="nav_dropdown_content">สัตว์น้ำ</a>
-          </div>
+    <!-- Nav bar section -->
+    <div class="nav_bar">
+        <div class="nav-logo">
+            <a href="./index.html" class="nav-logo-overlay nav-img-logo"></a>
+            <img src="./assets/image/nav/aquaclub logo.png" alt="web-logo" class="nav-img-logo">
         </div>
-         <a href="./about_us.html" class="nav_botton nb_about_us">About us</a>
-         <a onclick="ContactFunction()" class="nb_contact">Contact</a>
+        <div class="nav_botton_container">
+            <a href="./index.html" id="got-button" class="nav_botton nb_home">Home</a>
 
-        <script src="./js/nav/contant-button.js"></script>
+        <!-- dropdown in nav section -->
+                <div class="nav_botton nb_page">Page
+                    <div class="nav_dropdown_container">
+                        <a href="./aquatic_animals.html" target="_self" class="nav_dropdown_content">สัตว์น้ำ</a>
+                    </div>
+                 </div>
+             <a href="./about_us.html" class="nav_botton nb_about_us">About us</a>
+             <a onclick="ContactFunction()" class="nb_contact">Contact</a>
 
-         <img onclick="dropdown()"  src="./assets/image/icon/mobile/dropdown-icon-mobile.svg" alt="icon" class="dropdown-mobile">
+            <script src="./js/nav/contant-button.js"></script>
+
+
+            <div onclick="dropdown()" class="dropdown-mobile-line-container">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+             
+        </div>
     </div>
-</div>
-<!-- mobile dropdown invisible on normal -->
-<div id="dropdown" class="mobile-dropdown-menu-container">
-    <a onclick="topFunction()" id="got-button" class="mobile-dropdown-menu-element">Home</a>
-    <a target="_self" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="mobile-dropdown-menu-element">Contact</a>
-    <a href="./about_us.html" class="mobile-dropdown-menu-element">About us</a>
-    <script src="./js/home/mobile-dropdown.js"></script>
-</div>
-
-<!-- contract container -->
+    <!-- mobile dropdown invisible on normal -->
+    <div id="dropdown" class="mobile-dropdown-menu-container">
+        <a onclick="topFunction()" id="got-button" class="mobile-dropdown-menu-element">Home</a>
+        <a onclick="ContactFunction()" class="mobile-dropdown-menu-element">Contact</a>
+        <a href="./about_us.html" class="mobile-dropdown-menu-element">About us</a>
+        <script src="./js/home/mobile-dropdown.js"></script>
+    </div>
+    
+    <!-- contract container -->
 <div class="contact-section" id="contact">
-<div class="contact-section-overlay-background contact-on-off"></div>
-<div class="contact-container contact-on-off">
-    <div class="contact-container-left">
-        <img src="./assets/image/home-contact-pic/beach-contact.png" alt="background" class="contact-pic">
-    </div>
-
-    <!-- contact section -->
-    <div class="contact-container-right">
-        <img onclick="ContactFunction()" src="./assets/image/icon/ui/close-button.png" alt="close" class="contact-close-button">
-
-        <div class="contact-header-container">
-            <div class="contact-header-text">Contact Us</div>
+    <div class="contact-section-overlay-background contact-on-off"></div>
+    <div class="contact-container contact-on-off">
+        <div class="contact-container-left">
+            <img src="./assets/image/home-contact-pic/beach-contact.png" alt="background" class="contact-pic">
         </div>
-            <!-- main contact container  -->
-            <div class="input-field-container-all">
-                    <input class="input-field" placeholder=" Enter Your Email...."  required type="text" id="email" name="email"><br><br>
-                    <textarea class="input-field comment-field" placeholder=" Enter Text Here..." name="comment"></textarea>
+    
+        <!-- contact section -->
+        <div class="contact-container-right">
+            <img onclick="ContactFunction()" src="./assets/image/icon/ui/close-button.png" alt="close" class="contact-close-button">
+
+            <div class="contact-header-container">
+                <div class="contact-header-text">Contact Us</div>
+            </div>
+                <!-- main contact container  -->
+                <div class="input-field-container-all">
+                        <input class="input-field" placeholder=" Enter Your Email...."  required type="text" id="email" name="email"><br><br>
+                        <textarea class="input-field comment-field" placeholder=" Enter Text Here..." name="comment"></textarea>
 
 
-                <div class="contact-send-to">ข้อความของคุณจะถูกส่งไปที่<div class="email-copy">Aquaclub@gmail.com</div></div>
-                    
-             </div>
-            
-        <div class="contact-button-container">
-            <div onclick="ContactFunction()" class="cancel-button contact-confirm-button">Cancel</div>
-            <div onclick="ContactFunction()"  class="submit-button contact-confirm-button">Submit</div>
+                    <div class="contact-send-to">ข้อความของคุณจะถูกส่งไปที่<div class="email-copy">Aquaclub@gmail.com</div></div>
+                        
+                 </div>
+                
+            <div class="contact-button-container">
+                <div onclick="ContactFunction()" class="cancel-button contact-confirm-button">Cancel</div>
+                <div onclick="ContactFunction()"  class="submit-button contact-confirm-button">Submit</div>
+            </div>
         </div>
     </div>
-</div>
 </div>
 
 
@@ -101,38 +110,42 @@
      <!-- Content box section row1  -->
     <div class="content_sector">
         <div class="content_container">
+                <a href="./dolphin.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/dolphin/dolphin-01.jpg" alt="imgae" class="content_img">
             <div class="content_header content_text">โลมา</div>
             <div class="content_paragharp content_text">เป็นสัตว์เลี้ยงลูกด้วยน้ำนมจำพวกหนึ่ง อาศัยอยู่ทั้งในทะเล, น้ำจืด และน้ำกร่อย มีรูปร่างคล้ายปลา คือ มีครีบ มีหาง แต่โลมาไม่ใช่ปลา</div>
             <div class="content-botton">
-                <a target="_self" href="./dolphin.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
         </div>
 
         <div class="content_container">
+                <a href="./whale.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/whale/whale-01.jpg" alt="image" class="content_img">
             <div class="content_header content_text">วาฬ</div>
             <div class="content_paragharp content_text">เป็นสัตว์เลี้ยงลูกด้วยนมขนาดใหญ่อาศัยอยู่แต่เฉพาะในทะเลหรือมหาสมุทร เป็นสัตว์ที่มีรูปร่างคล้ายปลา</div>
             <div class="content-botton">
-                <a target="_self" href="./whale.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
         </div>
 
         <div class="content_container">
+                <a href="./shark.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/blacktip-shark/blacktip-shark.jpg" alt="image" class="content_img">
             <div class="content_header content_text">ฉลาม</div>
             <div class="content_paragharp content_text">เป็นปลาในชั้นปลากระดูกอ่อน จำพวกหนึ่ง มีรูปร่างโดยรวมเพรียวยาว ส่วนใหญ่มีซี่กรองเหงือก 5 ซี่ ครีบทุกครีบแหลมคม ครีบหางเป็นแฉกเว้าลึก</div>
             <div class="content-botton">
-                <a target="_self" href="./shark.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
         </div>
         
          <div class="content_container">
+            <a href="./bowmouthguitarfish.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/bow-mouth-guitar-fish/bowmouthguitarfish.jpg" alt="image" class="content_img">
             <div class="content_header content_text">ปลาโรนิน</div>
             <div class="content_paragharp content_text">ปลาโรนินพบอาศัยอยู่ตามบริเวณพื้นทะเลที่เป็นดินทรายปนโคลน พบได้ในทะเลแดง, แอฟริกาตะวันออก, ญี่ปุ่นตอนใต้, ปาปัวนิวกินี, ในน่านน้ำไทยพบที่ฝั่งอันดามัน</div>
             <div class="content-botton">
-                <a target="_self" href="./bowmouthguitarfish.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
         </div>
     </div>
@@ -143,40 +156,44 @@
      <!-- Content box section row2  -->
      <div class="content_sector">
         <div class="content_container">
+                <a href="./brydewhale.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/brydewhale/brydeswhale.jpg" alt="imgae" class="content_img">
             <div class="content_header content_text">วาฬบรูด้า</div>
             <div class="content_paragharp content_text">วาฬบรูด้าเป็นวาฬขนาดกลางถึงใหญ่ที่มีลำตัวเข้มสีและลำตัวขาวด้านล่าง พวกมันมักอาศัยอยู่ในทะเลร้อนและล่าอาหารโดยกระโดดจากใต้น้ำขึ้นมา</div>
             <div class="content-botton">
-                <a target="_self" href="./brydewhale.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
         </div>
 
         <div class="content_container">
+                <a href="./clam.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/clam/clam.jpg" alt="image" class="content_img">
             <div class="content_header content_text">หอย</div>
             <div class="content_paragharp content_text">
                 หอยเป็นสัตว์ที่มีเปลือกและอาศัยอยู่ในทะเลและบนบก มีหลายชนิดและมีบทบาทสำคัญในนิเวศน์และอาหารของมนุษย์ หอยมีความหลากหลายทางชีวภาพที่น่าสนใจและมีความสำคัญต่อสิ่งแวดล้อม</div>
             <div class="content-botton">
-                <a target="_self" href="./clam.html" class="content_botton content_text">รายละเอียด</a>
-             </div>
+                <div class="content_botton content_text">รายละเอียด</div>
+            </div>
         </div>
 
         <div class="content_container">
+                 <a href="./coral.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/coral/coral.jpg" alt="image" class="content_img">
             <div class="content_header content_text">ปะการัง</div>
             <div class="content_paragharp content_text">ปะการังคือสัตว์ทะเลที่สร้างโครงสร้างหินใต้น้ำ มักมีลักษณะเป็นโครงสร้างหินสวยงามที่เต็มไปด้วยชีวิตชนิดต่างๆ </div>
             <div class="content-botton">
-                <a target="_self" href="./coral.html" class="content_botton content_text">รายละเอียด</a>
-             </div>
+                <div class="content_botton content_text">รายละเอียด</div>
+            </div>
         </div>
         
          <div class="content_container">
+                 <a href="./devilrays.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/devil-rays/devilrays.jpg" alt="image" class="content_img">
             <div class="content_header content_text">กระเบนปีศาจ</div>
             <div class="content_paragharp content_text">ปลากระเบนปีศาจ เป็นปลากระเบนขนาดใหญ่ ลำตัวแบนรูปสี่เหลี่ยมข้าวหลามตัด มีครีบหลังขนาดใหญ่ หัวสั้น ปากอยู่ด้านล่าง กินแพลงก์ตอนเป็นอาหาร</div>
             <div class="content-botton">
-                <a target="_self" href="./devilrays.html" class="content_botton content_text">รายละเอียด</a>
-             </div>
+                <div class="content_botton content_text">รายละเอียด</div>
+            </div>
         </div>
     </div>
 
@@ -186,39 +203,43 @@
      <!-- Content box section row3  -->
      <div class="content_sector">
         <div class="content_container">
+                 <a href="./dugong.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/dugong/dugong.jpg" alt="imgae" class="content_img">
             <div class="content_header content_text">พะยูน</div>
             <div class="content_paragharp content_text">พะยูนเป็นสัตว์ทะเลขนาดใหญ่ที่คล้ายกับโลมา มีขนาดใหญ่ที่สุดในโลก มีหางกว้างและแบน มีลำตัวเล็กลงและมีหัวใหญ่ มีระบบประสาทที่ซับซ้อน</div>
             <div class="content-botton">
-                <a target="_self" href="./dugong.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
         </div>
 
         <div class="content_container">
+             <a href="./fish.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/fish/fish.jpg" alt="image" class="content_img">
             <div class="content_header content_text">ปลา</div>
             <div class="content_paragharp content_text">ปลาเป็นสัตว์เลี้ยงในน้ำที่มีกระดูกสันหลัง เป็นสัตว์ที่มีหางและครีบในการเคลื่อนที่ในน้ำ มีการหายใจด้วยเหงือกหรือเอาเลื่อยน้ำผ่านเหงือก</div>
             <div class="content-botton">
-                <a target="_self" href="./fish.html" class="content_botton content_text">รายละเอียด</a>
-             </div>
+                <div class="content_botton content_text">รายละเอียด</div>
+            </div>
         </div>
 
         <div class="content_container">
+                 <a href="./jellyfish.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/jelly-fish/jellyfish.jpg" alt="image" class="content_img">
             <div class="content_header content_text">แมงกะพรุน</div>
             <div class="content_paragharp content_text">เป็นสัตว์ตัวเล็กที่อยู่ในกลุ่มของแมลง เป็นแมงกลุ่มหนึ่งที่มีลักษณะต่างๆ ส่วนใหญ่มักมีขนาดเล็กและมีสีสันสวยงาม มีปีกสองคู่และมีรูปร่างที่หลากหลาย</div>
             <div class="content-botton">
-                <a target="_self" href="./jellyfish.html" class="content_botton content_text">รายละเอียด</a>
-             </div>
+                <div class="content_botton content_text">รายละเอียด</div>
+            </div>
         </div>
         
          <div class="content_container">
+                 <a href="./leatherbackturtle.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/leather-back-turtle/leatherbackturtle.jpg" alt="image" class="content_img">
             <div class="content_header content_text">เต่ามะเฟือง</div>
             <div class="content_paragharp content_text">เป็นเต่าที่มีลักษณะต่างกัน มีหัวเตี้ยมีหางที่ลอยน้ำเหมือนแผ่นเส้น ส่วนใหญ่เต่ามะเฟืองมักจะอาศัยอยู่ในทะเลและบริเวณน้ำจืด</div>
             <div class="content-botton">
-                <a target="_self" href="./leatherbackturtle.html" class="content_botton content_text">รายละเอียด</a>
-             </div>
+                <div class="content_botton content_text">รายละเอียด</div>
+            </div>
         </div>
     </div>
 
@@ -228,39 +249,43 @@
          <!-- Content box section row4  -->
      <div class="content_sector">
         <div class="content_container">
+                 <a href="./leopardshark.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/leopard-shark/leopardshark.jpg" alt="imgae" class="content_img">
             <div class="content_header content_text">ฉลามเสือดาว</div>
             <div class="content_paragharp content_text">เป็นฉลามที่มีลักษณะต่างจากฉลามอื่นๆ มีลักษณะเด่นคือลายเส้นที่คล้ายลายเส้นบนตัวเสือดาวที่ปรากฏเหมือนเสื้อเสื้อแขนยาว มีสีเหลืองและน้ำเงินเข้ม</div>
             <div class="content-botton">
-                <a target="_self" href="./leopardshark.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
         </div>
 
         <div class="content_container">
+                 <a href="./mantarays.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/mantarays/mantarays.png" alt="image" class="content_img">
             <div class="content_header content_text">กระเบนราหูยักษ์</div>
             <div class="content_paragharp content_text"> เป็นประเภทหนึ่งของกระเบนที่มีขนาดใหญ่และมีรูปร่างที่สวยงาม เป็นกระเบนที่มีลักษณะมีหางยาวและโครงสร้างต่างๆ ที่ทำให้ดูเป็นมุมมองที่น่าอัศจรรย์ใต้ทะเล</div>
             <div class="content-botton">
-                <a target="_self" href="./mantarays.html" class="content_botton content_text">รายละเอียด</a>
-             </div>
+                <div class="content_botton content_text">รายละเอียด</div>
+            </div>
         </div>
 
         <div class="content_container">
+                 <a href="./octopus.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/octopus/octopus.jpg" alt="image" class="content_img">
             <div class="content_header content_text">หมึกสาย</div>
             <div class="content_paragharp content_text">หมึกสายแตกต่างจากหมึกกล้วยหรือหมึกกระดองอย่างเห็นได้ชัด โดยที่หมึกสายจะมีส่วนหัวที่กลมยาวคล้ายลูกโป่ง หนวดมีทั้งหมด 8 เส้น และไม่มีหนวดเส้นยาว 2 เส้นสำหรับจับเหยื่อ</div>
             <div class="content-botton">
-                <a target="_self" href="./octopus.html" class="content_botton content_text">รายละเอียด</a>
-             </div>
+                <div class="content_botton content_text">รายละเอียด</div>
+            </div>
         </div>
         
          <div class="content_container">
+                 <a href="./omurawhale.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/omuru-whale/omurawhale.jpg" alt="image" class="content_img">
             <div class="content_header content_text">วาฬโอมุระ</div>
             <div class="content_paragharp content_text"> เป็นชนิดของวาฬที่มีขนาดกลางถึงใหญ่ ชื่อของมันมาจากนักชีววิทยาญี่ปุ่น ที่เป็นผู้ค้นพบครั้งแรกเมื่อปี พ.ศ. 2536 มีลักษณะคล้ายกับวาฬปลาฉลาม</div>
             <div class="content-botton">
-                <a target="_self" href="./omurawhale.html" class="content_botton content_text">รายละเอียด</a>
-             </div>
+                <div class="content_botton content_text">รายละเอียด</div>
+            </div>
         </div>
     </div>
 
@@ -270,38 +295,42 @@
     <!-- Content box section row5  -->
     <div class="content_sector">
        <div class="content_container">
-           <img src="./assets/image/Aquatic Animal/otter/otter.jpg" alt="image" class="content_img">
-           <div class="content_header content_text">นาก</div>
-           <div class="content_paragharp content_text">นากมักจะอาศัยอยู่ในป่าเขาหรือพื้นที่ป่าชื้น มักหาอาหารในที่หลบซ่อนหลบ และกินผลไม้และแมลงต่างๆ นากมีบทบาทที่สำคัญในการกระจายเมล็ดพืชและในนิเวศศาสตร์ป่าไม้</div>
-           <div class="content-botton">
-               <a target="_self" href="./otter.html" class="content_botton content_text">รายละเอียด</a>
-           </div>
+                 <a href="./otter.html" class="clickable-content-overlay-container"></a>
+            <img src="./assets/image/Aquatic Animal/otter/otter.jpg" alt="image" class="content_img">
+            <div class="content_header content_text">นาก</div>
+            <div class="content_paragharp content_text">นากมักจะอาศัยอยู่ในป่าเขาหรือพื้นที่ป่าชื้น มักหาอาหารในที่หลบซ่อนหลบ และกินผลไม้และแมลงต่างๆ นากมีบทบาทที่สำคัญในการกระจายเมล็ดพืชและในนิเวศศาสตร์ป่าไม้</div>
+            <div class="content-botton">
+                <div class="content_botton content_text">รายละเอียด</div>
+            </div>
        </div>
 
        <div class="content_container">
+                 <a href="./penguin.html" class="clickable-content-overlay-container"></a>
            <img src="./assets/image/Aquatic Animal/penguin/penguin.jpg" alt="image" class="content_img">
            <div class="content_header content_text">เพนกวิน</div>
            <div class="content_paragharp content_text">เป็นนกที่อาศัยอยู่ในทะเลและมีลักษณะที่เด่นเป็นเลียนแบบหน้ามนุษย์ มีลักษณะที่เรียบง่ายและมีขนาดที่ใหญ่ มีปีกสั้นที่กลม และมีสีขาวดำที่สวยงาม</div>
            <div class="content-botton">
-               <a target="_self" href="./penguin.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
        </div>
 
        <div class="content_container">
-           <img src="./assets/image/Aquatic Animal/porifera/porifera.jpg" alt="image" class="content_img">
-           <div class="content_header content_text">ฟองน้ำ</div>
-           <div class="content_paragharp content_text">ฟองน้ำเป็นสิ่งมีชีวิตหลายเซลล์ที่ร่างกายเต็มไปด้วยรูและช่องทางสำหรับให้น้ำไหลเวียนเข้าไป โดยประกอบด้วยเมโซฮิลที่คล้ายวุ้นขนาบด้วยชั้นเซลล์บาง ๆ สองชั้น</div>
-           <div class="content-botton">
-               <a target="_self" href="./porifera.html" class="content_botton content_text">รายละเอียด</a>
+                 <a href="./porifera.html" class="clickable-content-overlay-container"></a>
+            <img src="./assets/image/Aquatic Animal/porifera/porifera.jpg" alt="image" class="content_img">
+            <div class="content_header content_text">ฟองน้ำ</div>
+            <div class="content_paragharp content_text">ฟองน้ำเป็นสิ่งมีชีวิตหลายเซลล์ที่ร่างกายเต็มไปด้วยรูและช่องทางสำหรับให้น้ำไหลเวียนเข้าไป โดยประกอบด้วยเมโซฮิลที่คล้ายวุ้นขนาบด้วยชั้นเซลล์บาง ๆ สองชั้น</div>
+            <div class="content-botton">
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
        </div>
        
         <div class="content_container">
-           <img src="./assets/image/Aquatic Animal/shrimp/shrimp.jpg" alt="image" class="content_img">
-           <div class="content_header content_text">กุ้ง</div>
-           <div class="content_paragharp content_text">เป็นสัตว์น้ำที่มีส่วนมากอยู่ในกลุ่มของสัตว์โครงสร้างที่มีเปลือกแข็งบริเวณข้างนอกที่เรียกว่าเชลล์ มีลำตัวที่แบนและยาว เป็นสัตว์ที่มีความหลากหลายมากๆ ในทะเลและน้ำจืด</div>
-           <div class="content-botton">
-               <a target="_self" href="./shrimp.html" class="content_botton content_text">รายละเอียด</a>
+                 <a href="./shrimp.html" class="clickable-content-overlay-container"></a>
+            <img src="./assets/image/Aquatic Animal/shrimp/shrimp.jpg" alt="image" class="content_img">
+            <div class="content_header content_text">กุ้ง</div>
+            <div class="content_paragharp content_text">เป็นสัตว์น้ำที่มีส่วนมากอยู่ในกลุ่มของสัตว์โครงสร้างที่มีเปลือกแข็งบริเวณข้างนอกที่เรียกว่าเชลล์ มีลำตัวที่แบนและยาว เป็นสัตว์ที่มีความหลากหลายมากๆ ในทะเลและน้ำจืด</div>
+            <div class="content-botton">
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
        </div>
    </div>
@@ -312,38 +341,42 @@
    <!-- Content box section row6  -->
     <div class="content_sector">
         <div class="content_container">
+                 <a href="./turtle.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/turtle/turtle.jpg" alt="image" class="content_img">
             <div class="content_header content_text">เต่า</div>
             <div class="content_paragharp content_text">เต่าเป็นสัตว์เลื้อยคลานที่มีเปลือกหลังอย่างแข็งแรงและสั้น มักมีลักษณะโดยทั่วไปคือมีส่วนหัวและลำตัวที่ใหญ่ และลำตัวมักมีเปลือกหลังที่เป็นที่ระบายและป้องกันตัวจากสัตว์นักล่า</div>
             <div class="content-botton">
-                <a target="_self" href="./turtle.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
         </div>
 
         <div class="content_container">
+                 <a href="./whaleshark.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/whale-shark/whaleshark.jpg" alt="image" class="content_img">
             <div class="content_header content_text">ฉลามวาฬ</div>
             <div class="content_paragharp content_text">เป็นฉลามที่มีขนาดใหญ่เป็นอันดับหนึ่งในโลก มีลักษณะเด่นคือลำตัวที่ใหญ่และมีลายสีขาวหรือเทาที่สวยงาม มีลักษณะพิเศษที่คือมีจำนวนเยอะของปากเล็กๆ ที่มีรูพรุนใหญ่ </div>
             <div class="content-botton">
-                <a target="_self" href="./whaleshark.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
         </div>
 
         <div class="content_container">
+                 <a href="./starfish.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/starfish/starfish.jpg" alt="image" class="content_img">
             <div class="content_header content_text">ดาวทะเล</div>
             <div class="content_paragharp content_text">ดาวทะเลพวกมันมีรูปร่างกลมๆ มีแขน (หรือแขนขา) 5 และมักมีสีสดใสหรือสีสวยงาม สตาร์ฟิชมีความหลากหลายทั้งในรูปร่างและสี</div>
             <div class="content-botton">
-                <a target="_self" href="./starfish.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
         </div>
 
         <div class="content_container">
+                 <a href="./seahorse.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/sea-horse/seahorse-image.jpg" alt="image" class="content_img">
             <div class="content_header content_text">ม้าน้ำ</div>
             <div class="content_paragharp content_text">ม้าน้ำเป็นสัตว์เลี้ยงลำตัวในน้ำที่มีขนาดใหญ่และมีลำตัวที่กลมและหนัก พวกม้าน้ำมักพบอยู่ในแม่น้ำและบ่อน้ำที่ลึกในภูมิภาคต่างๆ</div>
             <div class="content-botton">
-                <a target="_self" href="./seahorse.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
         </div>
     </div> 
@@ -354,39 +387,43 @@
     <!-- Content box section row7  -->
     <div class="content_sector">
         <div class="content_container">
+                 <a href="./sawfishes.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/sawfishes/Sawfishes.jpg" alt="image" class="content_img">
             <div class="content_header content_text">ปลาฉนาก</div>
             <div class="content_paragharp content_text">จัดเป็นปลาขนาดใหญ่ มีรูปร่างคล้ายปลาฉลามแต่จัดอยู่ในประเภทเดียวกับปลากระเบน มีซี่กรองเหงือก 5 ซี่อยู่ใต้ส่วนหัวแต่มีส่วนหัวและหน้าอกแบนราบ</div>
             <div class="content-botton">
-                <a target="_self" href="./sawfishes.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
         </div>
  
         <div class="content_container">
+                 <a href="./arowana.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/arowana/arowana.jpg" alt="image" class="content_img">
             <div class="content_header content_text">ปลาแอโรวานา</div>
             <div class="content_paragharp content_text">เป็นปลาน้ำจืดชนิดหนึ่ง ในวงศ์ปลาตะพัด ลำตัวยาว ด้านข้างแบน เกล็ดมีขนาดใหญ่สีเงินอมเขียวหรือฟ้าเรียงเป็นระเบียบอย่างสวยงาม</div>
             <div class="content-botton">
-                <a target="_self" href="./arowana.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
         </div>
 
         <div class="content_container">
+                 <a href="./siamesetigerfish.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/siamesetigerfish/siamesetigerfish.jpg" alt="image" class="content_img">
             <div class="content_header content_text">ปลาเสือตอลายใหญ่</div>
             <div class="content_paragharp content_text">มีรูปร่างแบนข้าง ปากยาวสามารถยืดได้ พื้นลำตัวสีเหลืองน้ำตาลจนถึงสีส้มอมดำ มีแถบสีดำคาดขวางลำตัวในแนวเฉียงรวมทั้งสิ้นประมาณ 5–7 แถบ</div>
             <div class="content-botton">
-                <a target="_self" href="./siamesetigerfish.html" class="content_botton content_text">รายละเอียด</a>
+                <div class="content_botton content_text">รายละเอียด</div>
             </div>
         </div>
 
         <div class="content_container">
+                 <a href="./sealions.html" class="clickable-content-overlay-container"></a>
             <img src="./assets/image/Aquatic Animal/sealions/sealions.jpg" alt="image" class="content_img">
             <div class="content_header content_text">สิงโตทะเล</div>
             <div class="content_paragharp content_text">สิงโตทะเลเป็นสัตว์เลี้ยงลูกด้วยนมในวงศ์แมวน้ำ จัดเป็นแมวน้ำมีหูจำพวกหนึ่ง พบกระจายพันธุ์ตามชายฝั่งทะเลทั่วโลก ตั้งแต่ทะเลเขตหนาวแถบขั้วโลกเหนือหรืออาร์กติก</div>
             <div class="content-botton">
-                <a target="_self" href="./sealions.html" class="content_botton content_text">รายละเอียด</a>
-             </div>
+                <div class="content_botton content_text">รายละเอียด</div>
+            </div>
         </div>
     </div>
 
@@ -394,18 +431,23 @@
 
 
      <!-- footer section -->
-     <div class="footer">
-        <div class="footer__top">
-            <div class="footer__top__left">
-                <img src="./assets/image/footer-img/footer-logo.png" alt="" class="footer__logo">
-                <p class="footer__name">Thanawat M.</p>
-                <p class="footer__name">Atip K.</p>
-                <p class="footer__name">Panmanee S.</p>
+    <div class="footer">
+        <div class="footer__top-main">
+            <div class="footer__top">
+                <img src="./assets/image/footer-img/footer-logo.png" alt="footer logo" class="footer__logo">
+
+                <div class="footer-button-container">
+                    <a href="./index.html" id="got-button" class="footer__button">Home</a>
+                    <a href="./about_us.html" class="footer__button">About us</a>
+                    <a onclick="ContactFunction()" class="footer__button">Contact</a>
+                </div>
             </div>
-            <div class="footer__top__right">
-                <a href="./home.html" class="footer__button">Home</a>
-                <a href="./about_us.html" class="footer__button">About us</a>
-                <a href="" class="footer__button">Contact</a>
+            <div class="footer__mid">
+                <div class="footer-name-container">
+                    <p class="footer__name">Thanawat M.</p>
+                    <p class="footer__name">Atip K.</p>
+                    <p class="footer__name">Panmanee S.</p>
+                </div>
             </div>
         </div>
         <div class="footer__bottom">
