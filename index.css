@@ -399,7 +399,7 @@ transform-origin: bottom left;
 }
   
 .dot {
-    height: 15px;
+    height:4px;
     width: 15px;
     background-color: #ccc;
     margin: 0 5px;
