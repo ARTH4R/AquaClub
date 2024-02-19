@@ -316,7 +316,9 @@ transform-origin: bottom left;
     text-align: center;
     font-family: 'Prompt', sans-serif;
     font-size: 0.7rem;
+    background-color: #144272;
     color: white;
+    padding-bottom: 0.5rem;
 }
 
 
@@ -324,8 +326,10 @@ transform-origin: bottom left;
 .about-us-container {
     padding-bottom: 2rem;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
+    background-color: #144272;
 }
 .profile-box {
     position: relative;
