@@ -821,19 +821,19 @@ transform-origin: bottom left;
 }
 
 .content__topic__th {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     line-height: 0rem;
     color: #0A2647;
 }
 
 .content__topic__en {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     line-height: 0.2rem;
     color: #144272;
 }
 
 .content__topic__anecdote {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     line-height: 0.2rem;
     color: #0A2647;
     margin-top: 7%;
@@ -844,6 +844,7 @@ transform-origin: bottom left;
     line-height: 1rem;
     margin-top: 1rem;
     color: #0A2647;
+    line-height: 0.5rem;
 }
 
 .content__topic__animalspecies {
